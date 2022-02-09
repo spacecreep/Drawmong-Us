@@ -1,0 +1,25 @@
+
+Cahier des charges :
+Projet: jeu à plusieurs sur réseau accessible par navigateur (optimisé pour tablette et mobile) d’une durée d’une dizaine de minutes afin que les étudiants puissent se divertir durant les temps de pause.
+Pour le projet, travail sur html, css, javascript.
+Pour l’interface, on prendra celle de Gartic Phone comme base (sans login).
+Jeu (n joueurs) : (n-1) joueurs reçoivent un mot à dessiner et 1 joueur reçoit « imposteur ». Les joueurs ont 1 à 1 l’un après l’autre, 10 secondes pour dessiner le mot qui leur est attribué et l’imposteur doit réussir à se fondre dans la masse. Après 5 tours, les joueurs doivent voter pour qui ils pensent est l’imposteur.
+Des points sont attribués si les joueurs ont réussi à trouver l’imposteur et en fonction du nombre de joueur que l’imposteur a réussi à tromper.
+Une liste de mots est proposée de base, mais il y aura également la possibilité de créer sa propre liste de mots ou de les rajouter à celle proposée.
+Projet divisé en deux parties : site web (hébergement, esthétique) et application web.
+Application web :
+-	Ecrire son nom/pseudo
+-	Inviter des gens à son salon de jeu
+-	Bouton démarrer
+-	Voir qui est dans son salon
+-	Voir et changer les réglages (Temps pour dessiner, nombre de manches, nombre de tour) pour la personne qui a créé le salon
+-	Si on a le temps on donne la possibilité de changer la liste de mots/rajouter des mots.
+-	Une fois le jeu démarré :
+o	Afficher le mot choisi en gros au milieu de l’application pour tout le monde. (5secondes)
+o	Garder le mot dans un coin de l’application pour toute la durée de la manche
+o	Notifier la personne qui doit dessiner
+o	Afficher la toile pour tout le monde et ne permettre qu’à un seul joueur de dessiner (10secondes). Empêcher la personne qui dessine d’effacer les dessins précédents.
+o	Temps de pause de qqs secondes pour la transition entre deux joueurs
+o	Après 3 tours, afficher la liste des joueurs afin que chaque joueur puisse voter « l’imposteur »
+o	Attribuer des points aux joueurs ayant trouvé l’imposteur et à l’imposteur en fonction du nombre de joueur qu’il a su tromper.
+o	Après 3 à 5manches, afficher le résultat final.
