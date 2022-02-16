@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta charset="utf-8"/>
     <title>Drawmong-Us</title>
     <link rel="stylesheet" href="css/home.css"/>
 </head>
@@ -29,6 +30,8 @@
     </div>
 </div>
 
+<div><a href="chat" title="chat servlet">Chat</a></div>
+<div><a href="paint" title="paint servlet">Paint</a></div>
 
 </body>
 

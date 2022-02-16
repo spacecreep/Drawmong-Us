@@ -7,6 +7,10 @@ h1 {
     font-size: 50px;
 }
 
+button{
+    border-radius: 5px;
+}
+
 .BaseInterface{
     padding: 30px;
     background-color: azure;
