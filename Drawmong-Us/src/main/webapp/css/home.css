@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(191, 153, 226);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.BaseInterface{
+    padding: 30px;
+    background-color: azure;
+}
+
+.ChooseName{
+    background-color: aqua;
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+}
+
+.JoinGame{
+    background-color: aqua;
+    margin: 0 auto;
+    width: fit-content;
+    display: none;
+}
+
+.CreateGame{
+    background-color: aqua;
+    margin: 0 auto;
+    width: fit-content;
+    display: none;
+}
+
+.PseudoText{
+    background-color: aqua;
+    margin: 0 auto;
+    width: fit-content;
+    display: none;
+    font-size: 25px;
+}
