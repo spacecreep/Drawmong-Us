@@ -1,97 +1,112 @@
-/** A class for a 2D point */
-class Point {
-    /** x-axis coordinate*/
-    #x;
-    /** y-axis coordinate*/
-    #y;
+var canvas, ctx, flag = false,
+    prevX = 0,
+    currX = 0,
+    prevY = 0,
+    currY = 0,
+    dot_flag = false;
 
-    /** Constructor
-     *
-     * @param x x-axis coordinate
-     * @param y y axis-coordinate
-     */
-    constructor(x, y) {
-        this.#x = x;
-        this.#y = y;
+var x = "black",
+    y = 2;
+
+function init() {
+    canvas = document.getElementById('can');
+    ctx = canvas.getContext("2d");
+    let w = canvas.width;
+    let h = canvas.height;
+
+    canvas.addEventListener("mousemove", function (e) {
+        findxy('move', e)
+    }, false);
+    canvas.addEventListener("mousedown", function (e) {
+        findxy('down', e)
+    }, false);
+    addEventListener("mouseup", function (e) {
+        findxy('up', e);
+        save()
+    }, false);
+
+}
+
+function color(obj) {
+    switch (obj.id) {
+        case "green":
+            x = "green";
+            break;
+        case "blue":
+            x = "blue";
+            break;
+        case "red":
+            x = "red";
+            break;
+        case "yellow":
+            x = "yellow";
+            break;
+        case "orange":
+            x = "orange";
+            break;
+        case "black":
+            x = "black";
+            break;
+        case "white":
+            x = "white";
+            break;
     }
+    if (x === "white") y = 14;
+    else y = 2;
 
-    /**
-     * Getter for x-axis coordinate
-     * @returns {*}
-     */
-    get x() {
-        return this.#x;
-    }
+}
 
-    /**
-     * Getter for y-axis coordinates
-     * @returns {*}
-     */
-    get y() {
-        return this.#y;
+function draw() {
+    ctx.beginPath();
+    ctx.moveTo(prevX, prevY);
+    ctx.lineTo(currX, currY);
+    ctx.strokeStyle = x;
+    ctx.lineWidth = y;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function erase() {
+    var m = confirm("Want to clear");
+    if (m) {
+        ctx.clearRect(0, 0, w, h);
+        document.getElementById("canvasimg").style.display = "none";
     }
 }
 
-/** A class for drawing in a canvas : draw a line on mouse dragged */
-class Paint {
-    /** the reference of the canvas */
-    #canvas;
-    /** last dragging location */
-    #lastLocation = null;
+function save() {
+    document.getElementById("canvasimg").style.border = "2px solid";
+    document.getElementById("canvasimg").src = canvas.toDataURL();
+    document.getElementById("canvasimg").style.display = "inline";
+}
 
-    /** Constructor
-     *
-     * @param canvas the canvas
-     */
-    constructor(canvas) {
-        /** save the canvas reference */
-        this.#canvas = canvas;
-        /** Use that because this in event listeners refers to the listener itself */
-        let that = this;
-        /** start dragging */
-        canvas.addEventListener("mousedown", function (e) {
-            that.#lastLocation = new Point(
-                e.offsetX == undefined ? e.layerX : e.offsetX,
-                e.offsetY == undefined ? e.layerY : e.offsetY);
-        });
-        /** draw the event and stop dragging */
-        canvas.addEventListener("mouseup", function (e) {
-            that.#draw(e);
-            that.stopDrag();
-        });
-        /** draw the event and stop dragging */
-        canvas.addEventListener("mouseout", function (e) {
-            that.#draw(e);
-            that.stopDrag();
-        });
-        /** draw the event  */
-        canvas.addEventListener("mousemove", function (e) {
-            that.#draw(e);
-        });
+function findxy(res, e) {
+    if (res === 'down') {
+        prevX = currX +scrollX;
+        prevY = currY +scrollY;
+        currX = e.clientX - canvas.offsetLeft + scrollX;
+        currY = e.clientY - canvas.offsetTop + scrollY;
+
+        flag = true;
+        dot_flag = true;
+        if (dot_flag) {
+            ctx.beginPath();
+            ctx.fillStyle = x;
+            ctx.fillRect(currX, currY, 2, 2);
+            ctx.closePath();
+            dot_flag = false;
+        }
     }
-
-    /**
-     * Paint a line between the last location and the location denoted by e
-     * @param e the event containing the coordinates
-     */
-    #draw(e) {
-        if (!e) e = window.event;
-        if (this.#lastLocation == null) return;
-        var x = e.offsetX == undefined ? e.layerX : e.offsetX;
-        var y = e.offsetY == undefined ? e.layerY : e.offsetY;
-        var ctx = this.#canvas.getContext("2d");
-        ctx.beginPath();
-        ctx.moveTo(this.#lastLocation.x, this.#lastLocation.y);
-        ctx.lineTo(x, y);
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = "#FF0000";
-        ctx.stroke();
-        this.#lastLocation = new Point(x, y);
-
+    if (res === 'up' || res === "out") {
+        flag = false;
     }
-
-    /** Indicates the end of the dragging gesture by setting the last location to null */
-    stopDrag() {
-        this.#lastLocation = null;
+    if (res === 'move') {
+        if (flag) {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft + scrollX;
+            currY = e.clientY - canvas.offsetTop + scrollY;
+            draw();
+        }
     }
 }

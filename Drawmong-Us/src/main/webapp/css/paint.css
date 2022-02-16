@@ -1,3 +1,24 @@
-#mycanvas {
-    border: 1px solid gray;
+.Button{
+    display:block;
 }
+
+.Whiteboard{
+    border-width:2px;
+    border-style:solid;
+    border-color: gray(0);
+    display:inline;
+}
+
+.Select{
+    border-width:2px;
+    border-style:solid;
+    border-color: gray(0);
+    display:inline;
+}
+
+.Color{
+    height: 2px;
+    width: 2px;
+}
+
+
