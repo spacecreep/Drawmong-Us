@@ -12,7 +12,7 @@ button{
 }
 
 .BaseInterface{
-    padding: 30px;
+    padding: 20px;
     background-color: azure;
 }
 
@@ -43,4 +43,14 @@ button{
     width: fit-content;
     display: none;
     font-size: 25px;
+}
+
+.Lobby{
+    display: none;
+}
+
+.ChangePseudo{
+    display: none;
+    margin: 0 auto;
+    width: fit-content;
 }
