@@ -1,0 +1,206 @@
+Index: Drawmong-Us/src/main/webapp/index.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE HTML>\r\n<html>\r\n<head>\r\n    <meta charset=\"utf-8\"/>\r\n    <title>Drawmong-Us</title>\r\n    <link rel=\"stylesheet\" href=\"css/home.css\"/>\r\n</head>\r\n<body>\r\n<div class=\"Title\">\r\n    <h1>Drawmong-Us</h1>\r\n</div>\r\n<div class=\"BaseInterface\">\r\n    <div class=\"PseudoText\" id=\"PseudoText\">\r\n\r\n    </div>\r\n    <div class=\"ChooseName\" id=\"ChooseName\">\r\n        <h3>Entrez votre pseudo</h3>\r\n        <input id=\"PseudoInput\">\r\n        <button onclick=\"test()\">OK</button>\r\n    </div>\r\n    <div class=\"JoinGame\" id=\"JoinGame\">\r\n        <h3>Rejoindre une partie</h3>\r\n        <h5>Entrez le code de la partie à rejoindre</h5>\r\n        <input>\r\n        <button>Rejoindre</button>\r\n    </div>\r\n    <div class=\"CreateGame\" id=\"CreateGame\">\r\n        <h3>Créer une partie</h3>\r\n            <button>Créer</button>\r\n    </div>\r\n</div>\r\n\r\n<div><a href=\"chat\" title=\"chat servlet\">Chat</a></div>\r\n<div><a href=\"paint\" title=\"paint servlet\">Paint</a></div>\r\n\r\n</body>\r\n\r\n<script src=\"js/home.js\"></script>\r\n\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Drawmong-Us/src/main/webapp/index.jsp b/Drawmong-Us/src/main/webapp/index.jsp
+--- a/Drawmong-Us/src/main/webapp/index.jsp	
++++ b/Drawmong-Us/src/main/webapp/index.jsp	
+@@ -25,8 +25,9 @@
+         <button>Rejoindre</button>
+     </div>
+     <div class="CreateGame" id="CreateGame">
+-        <h3>Créer une partie</h3>
+-            <button>Créer</button>
++        <h3>Creer une partie</h3>
++        <input type=button onClick="parent.open('create_lobby.jsp')"
++               value='Creer' >
+     </div>
+ </div>
+ 
+@@ -35,6 +36,8 @@
+ 
+ </body>
+ 
+-<script src="js/home.js"></script>
++<script src="js/home.js">
++
++</script>
+ 
+ </html>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/gradle.xml	
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$/Drawmong-Us" />
++        <option name="gradleHome" value="$USER_HOME$/Downloads/gradle-7.4-all/gradle-7.4" />
++        <option name="gradleJvm" value="#JAVA_HOME" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$/Drawmong-Us" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/modules.xml	
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Drawmong-Us.iml" filepath="$PROJECT_DIR$/.idea/Drawmong-Us.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/webContexts.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/webContexts.xml b/.idea/webContexts.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/webContexts.xml	
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="WebContextManager">
++    <option name="state">
++      <map>
++        <entry key="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF/create-game.html" value="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF" />
++        <entry key="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF/create_game.html" value="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF" />
++        <entry key="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp" />
++        <entry key="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" value="file://$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp" />
++      </map>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/jarRepositories.xml	
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="MavenRepo" />
++      <option name="name" value="MavenRepo" />
++      <option name="url" value="https://repo.maven.apache.org/maven2/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/misc.xml	
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++</project>
+\ No newline at end of file
+Index: .idea/Drawmong-Us.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Drawmong-Us.iml b/.idea/Drawmong-Us.iml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/Drawmong-Us.iml	
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	
++++ b/.idea/.gitignore	
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	
++++ b/.idea/vcs.xml	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
