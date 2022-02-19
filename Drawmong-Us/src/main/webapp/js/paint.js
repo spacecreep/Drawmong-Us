@@ -75,9 +75,7 @@ function erase() {
 }
 
 function save() {
-    document.getElementById("canvasimg").style.border = "2px solid";
     document.getElementById("canvasimg").src = canvas.toDataURL();
-    document.getElementById("canvasimg").style.display = "inline";
 }
 
 function findxy(res, e) {

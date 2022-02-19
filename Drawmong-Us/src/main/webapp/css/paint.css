@@ -6,19 +6,43 @@
     border-width:2px;
     border-style:solid;
     border-color: gray(0);
-    display:inline;
+    display:inline-block;
 }
 
 .Select{
     border-width:2px;
     border-style:solid;
-    border-color: gray(0);
-    display:inline;
+    border-color: black;
+    display:inline-block;
 }
 
 .Color{
-    height: 2px;
-    width: 2px;
+    height: 10px;
+    width: 10px;
+    display:inline-block;
 }
 
+.Eraser_click{
+    height: 20px;
+    width: 20px;
+    display:inline-block;
+    border-width:1px;
+    border-style:solid;
+    border-color: black;
+}
+
+.Eraser{
+    display:block;
+}
+
+.Param{
+    display:inline-block;
+}
+
+.Affiche{
+    border-width: 2px;
+    border-style:solid;
+    border-color: gray(0);
+    display: inline-block;
+}
 
