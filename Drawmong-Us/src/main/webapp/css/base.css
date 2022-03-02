@@ -1,10 +1,12 @@
-html, body {
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
+
+body,head{
+    font-family: 'Nunito', Arial, sans-serif;
+    margin:0;
 }
 
-body {
-    font-family: 'Montserrat';
-    margin: 0;
+html, body {
+    height: 100vh;
 }
 
 body, body::backdrop, body:fullscreen {
