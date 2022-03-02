@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
+
+body{
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
 .Button{
     display:block;
 }
@@ -46,3 +52,13 @@
     display: inline-block;
 }
 
+.ChatBox{
+    border-width: 2px;
+    border-style:solid;
+    border-color: gray(0);
+    display: inline-block;
+}
+
+#log{
+    width: 400px;
+}

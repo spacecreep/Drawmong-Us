@@ -3,7 +3,7 @@
 
 <link rel="stylesheet" href="css/paint.css"/>
 
-<script type="text/javascript" src="js/paint.js"></script>
+
 
 <body onload="init()">
 <div>
@@ -12,6 +12,18 @@
     </div>
     <div class=Affiche>
         <img id="canvasimg">
+    </div>
+    <div class=ChatBox>
+        <h1>Chat</h1>
+        <div>
+            <input type="text" id="username" placeholder="Username"/>
+            <button type="button" onclick="client.connect();">Connect</button>
+        </div>
+        <textarea readonly="true" rows="10" cols="80" id="log"></textarea>
+        <div>
+            <input type="text" size="51" id="msg" placeholder="Message"/>
+            <button type="button" onclick="client.send();">Send</button>
+        </div>
     </div>
 </div>
 <div class="Select">
@@ -33,4 +45,9 @@
     <button id="clr" onclick="erase()">clear</button>
 </div>
 </body>
+<script type="text/javascript" src="js/paint.js"></script>
+<script src="js/chat.js"></script>
+<script type="application/javascript">
+    const client = new ChatClient();
+</script>
 </html>
