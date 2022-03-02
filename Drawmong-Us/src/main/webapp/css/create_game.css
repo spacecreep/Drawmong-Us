@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Nunito', Arial, sans-serif;
+    background-color: #a16eb5;
 }
 
 #logo {
@@ -11,6 +12,31 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+.BaseInterface{
+    margin: 0 auto;
+    width: 50%;
+    height: 70%;
+    background-color: #a57eb9;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.ChooseName{
+    margin-top: 20%;
+    width: fit-content;
+    text-align: center;
+}
+
+.LobbySelection{
+    display: none;
+}
+
+.PseudoPlayer{
+    display: block;
+}
+
 
 .center-container {
     display: flex;
