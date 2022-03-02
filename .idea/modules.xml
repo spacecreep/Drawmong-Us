@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Drawmong-Us.iml" filepath="$PROJECT_DIR$/.idea/modules/Drawmong-Us.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Drawmong-Us.iml" filepath="$PROJECT_DIR$/.idea/Drawmong-Us.iml" />
     </modules>
   </component>
 </project>
