@@ -1,64 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap');
 
-body{
+body, head {
     font-family: 'Nunito', Arial, sans-serif;
 }
 
-.Button{
-    display:block;
+body {
+    background-color: #a57eb9;
 }
 
-.Whiteboard{
-    border-width:2px;
-    border-style:solid;
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.Button {
+    display: block;
+}
+
+.Whiteboard {
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
     border-color: gray(0);
-    display:inline-block;
+    display: inline-block;
 }
 
-.Select{
-    border-width:2px;
-    border-style:solid;
+.Select {
+    padding: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
     border-color: black;
-    display:inline-block;
+    display: inline-block;
 }
 
-.Color{
+.Color {
     height: 10px;
     width: 10px;
-    display:inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
 }
 
-.Eraser_click{
+.Eraser_click {
     height: 20px;
     width: 20px;
-    display:inline-block;
-    border-width:1px;
-    border-style:solid;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
     border-color: black;
 }
 
-.Eraser{
-    display:block;
+.Eraser {
+    display: block;
 }
 
-.Param{
-    display:inline-block;
+.Param {
+    display: inline-block;
 }
 
-.Affiche{
+.Affiche {
+    background-color: white;
     border-width: 2px;
-    border-style:solid;
+    border-style: solid;
+    border-radius: 10px;
     border-color: gray(0);
     display: inline-block;
 }
 
-.ChatBox{
+.ChatBox {
     border-width: 2px;
-    border-style:solid;
+    border-style: solid;
+    border-radius: 10px;
     border-color: gray(0);
     display: inline-block;
 }
 
-#log{
+#boiteChat{
+    margin:4px;
+}
+
+#log {
+    resize: none;
     width: 400px;
 }
