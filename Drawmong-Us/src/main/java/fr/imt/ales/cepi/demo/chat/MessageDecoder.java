@@ -27,7 +27,7 @@ public class MessageDecoder implements Decoder.Text<Message> {
     }
 
     /**
-     * Indicates if a message has to be decodes
+     * Indicates if a message has to be decoded
      *
      * @param s the message
      * @return

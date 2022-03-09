@@ -4,10 +4,17 @@ public class Message {
     private String from;
     private String to;
     private String content;
+    public String type;
 
     public Message(String from, String content) {
         this.from = from;
         this.content = content;
+    }
+
+    public Message(String from, String content, String type) {
+        this.from = from;
+        this.content = content;
+        this.type = type;
     }
 
     @Override

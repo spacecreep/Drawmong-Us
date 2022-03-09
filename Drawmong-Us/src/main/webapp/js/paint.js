@@ -80,7 +80,7 @@ function erase() {
 
 function save() {
     document.getElementById("canvasimg").src = canvas.toDataURL();
-    //console.log(document.getElementById("canvasimg").src);
+    client.sendimg();
 }
 
 function findxy(res, e) {

@@ -19,10 +19,16 @@ class ChatClient {
             // Print the message on the browser console
             console.log(event.data);
             // Append the message to the log field
-            let log = document.getElementById("log");
             let message = JSON.parse(event.data);
-            log.innerHTML += message.from + " : " + message.content + "\n";
-        };
+            if (message.type == "img") {
+                document.getElementById("canvasimg").src = message.content;
+            } else {
+                let log = document.getElementById("log");
+                let message = JSON.parse(event.data);
+                log.innerHTML += message.from + " : " + message.content + "\n";
+
+            }
+           };
     }
 
     /** Send the content of the message field to the server, in JSON */
@@ -30,6 +36,14 @@ class ChatClient {
         let json = JSON.stringify({
             "content": document.getElementById("msg").value
         });
+        this.webSocket.send(json);
+    }
+
+    sendimg() {
+        let json = JSON.stringify( {
+            "content": document.getElementById("canvasimg").src,
+            "type": "img"
+        })
         this.webSocket.send(json);
     }
 }
