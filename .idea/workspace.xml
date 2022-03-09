@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="Ajout d'un menu de création et de sélection de lobby">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2022_08_14_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2022_08_14__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2022_09_24_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2022_09_24__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/paint/CreateGameServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/create_lobby.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/create_game.css" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/create_game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/home.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/paint.js" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/paint.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +44,7 @@
         <option value="HTML File" />
         <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -304,6 +297,7 @@
       <workItem from="1646210561386" duration="1611000" />
       <workItem from="1646212603995" duration="864000" />
       <workItem from="1646213500328" duration="4268000" />
+      <workItem from="1646814267393" duration="4293000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>

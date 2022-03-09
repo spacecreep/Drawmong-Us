@@ -49,7 +49,7 @@ body{
 
 .content-container {
     display: block;
-    background-color: rgb(208, 250, 247);
+    background-color: rgba(208, 250, 247, 0.83);
     padding: 1rem 3rem 1rem 3rem;
 }
 
@@ -57,7 +57,7 @@ body{
     background-color: rgb(236, 93, 93);
     padding: 10px;
     border-radius: 15px;
-    color: white;
+    color: rgba(255, 255, 255, 0.81);
     font-weight: bold;
     margin-bottom: 20px;
     grid-column-start: 1;
@@ -75,16 +75,16 @@ body{
 }
 
 .tab-label {
-    background-color: rgb(236, 234, 234);
-    border-bottom: 0.3rem solid #cac5c5;
+    background-color: rgba(236, 234, 234, 0.82);
+    border-bottom: 0.3rem solid rgba(202, 197, 197, 0.81);
     outline: none;
     cursor: pointer;
     padding: 1rem;
 }
 
 .tab-button:checked + .tab-label {
-    background-color: rgb(179, 224, 241);
-    border-bottom: 0.3rem solid rgb(102, 102, 212);
+    background-color: rgba(179, 224, 241, 0.76);
+    border-bottom: 0.3rem solid rgba(102, 102, 212, 0.68);
     padding: 1rem;
 }
 
@@ -92,7 +92,7 @@ body{
     flex-direction: column;
     display: none;
     border: none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
     flex: 1 1;
     margin: 0 1rem 1rem 1rem;
     padding: 1rem;
@@ -121,7 +121,7 @@ body{
 
 .table-wrapper {
     flex: 1;
-    border: 1px solid slategray;
+    border: 1px solid rgba(112, 128, 144, 0.61);
     overflow-y: scroll;
 }
 
@@ -142,7 +142,7 @@ body{
     flex: 2;
     margin: 1rem;
     padding: 1rem;
-    background-color: rgb(226, 226, 226);
+    background-color: rgba(226, 226, 226, 0.46);
     overflow: auto;
 }
 
@@ -161,14 +161,14 @@ td, th {
 }
 
 th {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.25);
     position: sticky;
     top: 0;
     padding: 0.2rem;
 }
 
 tr:nth-child(2n) {
-    background-color: rgb(219, 219, 219);
+    background-color: rgba(219, 219, 219, 0.24);
 }
 
 tr:hover {
@@ -185,7 +185,7 @@ tr:hover {
 }
 
 tr[selected="true"] {
-    background-color: #6464de;
+    background-color: rgba(100, 100, 222, 0.63);
 }
 
 @media only screen
