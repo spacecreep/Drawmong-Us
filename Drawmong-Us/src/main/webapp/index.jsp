@@ -27,7 +27,7 @@
         <h3>Entrez votre pseudo</h3>
         <input id="PseudoInput">
         <button onclick="EnterPseudo()">OK</button>
-        <a href="jsp/paint.jsp">Paint</a>
+        <a href="paint">Paint</a>
     </div>
 
     <div class="LobbySelection" id="LobbySelection">
