@@ -7,7 +7,8 @@
     <title>Drawmong-Us, A toi de Jouer !</title>
 </head>
 
-<body onload="init()">
+<body onload="debut()">
+
 
 
 <div class="Title">
@@ -46,10 +47,6 @@
     <div class=ChatBox>
         <h1>Chat</h1>
         <div id="boiteChat">
-            <div>
-                <input type="text" id="username" placeholder="Username"/>
-                <button type="button" onclick="client.connect();">Connect</button>
-            </div>
             <textarea readonly="true" rows="10" cols="80" id="log" ></textarea>
             <div>
                 <input type="text" size="51" id="msg" placeholder="Message"/>
@@ -71,5 +68,10 @@
 <script src="js/chat.js"></script>
 <script type="application/javascript">
     const client = new ChatClient();
+
+    function debut(){
+        init();
+        client.connect();
+    }
 </script>
 </html>

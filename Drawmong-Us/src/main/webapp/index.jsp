@@ -20,6 +20,7 @@
 <body>
 <div>
     <h1>Drawmong-Us</h1>
+    <a href="paint">Paint</a>
 </div>
 
 <div class="BaseInterface" id="BaseInterface">
@@ -27,7 +28,6 @@
         <h3>Entrez votre pseudo</h3>
         <input id="PseudoInput">
         <button onclick="EnterPseudo()">OK</button>
-        <a href="paint">Paint</a>
     </div>
 
     <div class="LobbySelection" id="LobbySelection">

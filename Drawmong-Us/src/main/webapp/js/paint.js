@@ -9,6 +9,8 @@ var x = "black",
     y = 2;
 
 function init() {
+    //setCookie('pseudo', 'aaaaaaaa', dtExpire,'/' );
+
     canvas = document.getElementById('can');
     ctx = canvas.getContext("2d");
     let w = canvas.width;
@@ -117,3 +119,14 @@ class PaintClient {
 
     }
 }
+
+function setCookie(nom, valeur, expire, chemin, domaine, securite){
+    document.cookie = nom + ' = ' + escape(valeur) + '  ' +
+        ((expire == undefined) ? '' : ('; expires = ' + expire.toGMTString())) +
+        ((chemin == undefined) ? '' : ('; path = ' + chemin)) +
+        ((domaine == undefined) ? '' : ('; domain = ' + domaine)) +
+        ((securite == true) ? '; secure' : '');
+}
+
+var dtExpire = new Date();
+dtExpire.setTime(dtExpire.getTime() + 3600 * 1000);
