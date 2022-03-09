@@ -4,7 +4,7 @@ class ChatClient {
     /** connection */
     webSocket;
 
-    /** Connects to the server, save the connexion and listen for the messagessend by the server in JSON, in
+    /** Connects to the server, save the connexion and listen for the messages send by the server in JSON, in
      * order to print them in the log field
      * */
     connect() {

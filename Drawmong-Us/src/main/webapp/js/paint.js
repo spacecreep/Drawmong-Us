@@ -109,3 +109,11 @@ function findxy(res, e) {
         }
     }
 }
+
+class PaintClient {
+    webSocket;
+
+    connect() {
+
+    }
+}
