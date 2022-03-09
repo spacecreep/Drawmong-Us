@@ -68,7 +68,7 @@ function draw() {
     ctx.stroke();
     ctx.closePath();
 }
-
+/**
 function erase() {
     var m = confirm("Want to clear");
     if (m) {
@@ -76,9 +76,11 @@ function erase() {
         document.getElementById("canvasimg").style.display = "none";
     }
 }
+*/
 
 function save() {
     document.getElementById("canvasimg").src = canvas.toDataURL();
+    //console.log(document.getElementById("canvasimg").src);
 }
 
 function findxy(res, e) {

@@ -34,12 +34,12 @@
 
 <div>
 
-    <div class="Whiteboard" id="main">
+    <div id="Whiteboard">
         <canvas id="can" height="500px" width="500px"></canvas>
     </div>
 
 
-    <div class=Affiche>
+    <div id="Affiche">
         <img id="canvasimg">
     </div>
 
@@ -58,8 +58,8 @@
 
 
 <div class=Param>
-    <button id="btn" onclick="save()">save</button>
-    <button id="clr" onclick="erase()">clear</button>
+    <button id="btn" onclick="etat('jeu')">jouer</button>
+    <button id="clr" onclick="etat('obs')">observer</button>
 </div>
 </body>
 
@@ -71,7 +71,31 @@
 
     function debut(){
         init();
+        save();
+        etat("obs");
+
         client.connect();
     }
+
+    function etat(eta){
+        switch (eta) {
+            case "jeu":
+                document.getElementById("Whiteboard").style.display = "inline-block";
+                document.getElementById("can").style.display = "inline-block";
+                document.getElementById("Affiche").style.display = "none";
+                break;
+            case "obs":
+                document.getElementById("Affiche").style.display = "inline-block";
+                document.getElementById("Whiteboard").style.display = "none";
+                document.getElementById("can").style.display = "none";
+                break;
+            default:
+                document.getElementById("Whiteboard").style.display = "inline-block";
+                document.getElementById("can").style.display = "inline-block";
+                document.getElementById("Affiche").style.display = "inline-block";
+                break;
+        }
+    }
+
 </script>
 </html>
