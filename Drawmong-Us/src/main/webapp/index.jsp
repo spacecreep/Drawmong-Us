@@ -49,7 +49,7 @@
             <div id="create-lobby" class="tab-content">
                 <div class="center-container">
                     <div class="content-container">
-                        <form id="lobby-create" class="input-container" action="game" method="POST">
+                        <form id="lobby-create" class="input-container" action="info" method="GET">
                             <b>Langue</b>
                             <select class="input-item" name="language" placeholder="Choose your language">
                                 <option value="">--Choisissez une option--</option>
