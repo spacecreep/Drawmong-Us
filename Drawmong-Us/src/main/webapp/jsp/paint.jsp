@@ -71,11 +71,14 @@
     const client = new ChatClient();
 
     function debut(){
+        client.connect();
+        etat("obs");
         init();
         save();
-        etat("obs");
+        /**etat("obs");
 
         client.connect();
+         */
     }
 
     function etat(eta){

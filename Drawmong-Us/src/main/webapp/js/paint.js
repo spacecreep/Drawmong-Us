@@ -79,8 +79,12 @@ function erase() {
 */
 
 function save() {
-    document.getElementById("canvasimg").src = canvas.toDataURL();
-    client.sendimg();
+    try {
+        document.getElementById("canvasimg").src = canvas.toDataURL();
+        client.sendimg();
+    } catch(e) {
+        console.log(e);
+    }
 }
 
 function findxy(res, e) {
