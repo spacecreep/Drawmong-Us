@@ -75,15 +75,12 @@
         etat("obs");
         init();
         save();
-        /**etat("obs");
-
-        client.connect();
-         */
     }
 
     function etat(eta){
         switch (eta) {
             case "jeu":
+                majcanva();
                 document.getElementById("can").className ="Whiteboard";
                 document.getElementById("canvasimg").className = "Disparu";
                 document.getElementById("titreJoue").className = "Title";

@@ -24,6 +24,7 @@ function init() {
     }, false);
     addEventListener("mouseup", function (e) {
         findxy('up', e);
+        majcanva();
         save()
     }, false);
 
@@ -136,3 +137,9 @@ function setCookie(nom, valeur, expire, chemin, domaine, securite){
 
 var dtExpire = new Date();
 dtExpire.setTime(dtExpire.getTime() + 3600 * 1000);
+
+function majcanva() {
+    var canvas = document.getElementById('can');
+    var ctx = canvas.getContext('2d');
+        ctx.drawImage(document.getElementById('canvasimg'),0,0,500,500,0,0,500,500);
+    }

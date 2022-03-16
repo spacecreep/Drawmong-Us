@@ -17,7 +17,7 @@ class ChatClient {
         // Listen to the messages from the server
         this.webSocket.onmessage = (event) => {
             // Print the message on the browser console
-            console.log(event.data);
+                //console.log(event.data);
             // Append the message to the log field
             let message = JSON.parse(event.data);
             if (message.type == "img") {
