@@ -1,4 +1,4 @@
-package fr.imt.ales.cepi.demo.paint;
+package fr.imt.ales.cepi.demo.lobby;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

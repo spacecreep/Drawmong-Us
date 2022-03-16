@@ -91,6 +91,26 @@ h2 {
     margin-bottom: 1px;
 }
 
+.Votes{
+    background-color: #1883ba;
+    display: block;
+    border-radius: 10px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    margin: 10px;
+    max-width: 500px;
+}
+.votediv{
+    background-color: #3a768f;
+    border-radius: 10px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    margin: 10px;
+    display: flex;
+}
+
 #boiteChat {
     margin:4px;
 }

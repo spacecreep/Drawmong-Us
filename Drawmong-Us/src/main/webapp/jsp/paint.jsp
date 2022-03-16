@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <html>
 
 <link rel="stylesheet" href="css/paint.css"/>
@@ -20,7 +21,9 @@
 <div id="titreObs" class="Title">
     <h1>Devine qui est le Dess'Imposteur !</h1>
 </div>
-
+<div id="titreVote" class="Title">
+    <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
+</div>
 
 <div class="Select">
     <div>Choose Color</div>
@@ -38,7 +41,7 @@
 </div>
 
 
-<div>
+<div style="display: flex">
     <span id="interface">
 
     <canvas id="can" class="Whiteboard" height="500px" width="500px"></canvas>
@@ -55,13 +58,45 @@
             <button type="button" onclick="client.send();">Send</button>
         </div>
     </span>
+    <span id="Votes" class="Votes">
+        <div class="votediv">
+            <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
+            <button style="margin: 5px">Voter</button>
+        </div>
+        <div class="votediv">
+            <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
+            <button style="margin: 5px">Voter</button>
+        </div>
+        <div class="votediv">
+            <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
+            <button style="margin: 5px">Voter</button>
+        </div>
+        <div class="votediv">
+            <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
+            <button style="margin: 5px">Voter</button>
+        </div>
+
+    </span>
 </div>
 
 
 <div class=Param>
     <button id="jeu" onclick="etat('jeu')">jouer</button>
     <button id="obs" onclick="etat('obs')">observer</button>
+    <button id="vote" onclick="etat('Vote')">voter</button>
 </div>
+<H1>Recapitulatif des informations</H1>
+<UL>
+
+    <p>Probablitite des mots personnalises: ${proba}%</p>
+    <p>mots: ${mots}</p>
+    <p>langue: ${sessionScope['langue']}</p>
+    <p>Room publique: ${publique}</p>
+    <p>Joueurs max: ${max}</p>
+    <p>Nombre de manches: ${manches}</p>
+    <p>Temps de dessin: ${temps}s</p>
+
+</UL>
 </body>
 
 
@@ -75,6 +110,10 @@
         etat("obs");
         init();
         save();
+        /**etat("obs");
+
+        client.connect();
+         */
     }
 
     function etat(eta){
@@ -85,12 +124,24 @@
                 document.getElementById("canvasimg").className = "Disparu";
                 document.getElementById("titreJoue").className = "Title";
                 document.getElementById("titreObs").className = "Disparu";
+                document.getElementById("titreVote").className = "Disparu";
+                document.getElementById("Votes").className = "Disparu";
                 break;
             case "obs":
                 document.getElementById("can").className ="Disparu";
                 document.getElementById("canvasimg").className = "Affiche";
                 document.getElementById("titreJoue").className = "Disparu";
                 document.getElementById("titreObs").className = "Title";
+                document.getElementById("titreVote").className = "Disparu";
+                document.getElementById("Votes").className = "Disparu";
+                break;
+            case "Vote":
+                document.getElementById("can").className ="Disparu";
+                document.getElementById("canvasimg").className = "Disparu";
+                document.getElementById("titreJoue").className = "Disparu";
+                document.getElementById("titreObs").className = "Disparu";
+                document.getElementById("titreVote").className = "Title";
+                document.getElementById("Votes").className = "Votes";
                 break;
             default:
                 document.getElementById("can").className ="Whiteboard";
