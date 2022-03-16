@@ -9,6 +9,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" type="image/ico" href="ressources/favicon.ico"/>
     <title>Drawmong-Us</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">

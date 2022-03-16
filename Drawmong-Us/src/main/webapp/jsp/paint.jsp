@@ -2,6 +2,8 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <html>
 
+<link rel="shortcut icon" type="image/ico" href="ressources/favicon.ico"/>
+
 <link rel="stylesheet" href="css/paint.css"/>
 
 <head>
