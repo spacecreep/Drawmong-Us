@@ -85,6 +85,18 @@
     <button id="obs" onclick="etat('obs')">observer</button>
     <button id="vote" onclick="etat('Vote')">voter</button>
 </div>
+<H1>Recapitulatif des informations</H1>
+<UL>
+
+    <p>Probablitite des mots personnalises: ${proba}%</p>
+    <p>mots: ${mots}</p>
+    <p>langue: ${sessionScope['langue']}</p>
+    <p>Room publique: ${publique}</p>
+    <p>Joueurs max: ${max}</p>
+    <p>Nombre de manches: ${manches}</p>
+    <p>Temps de dessin: ${temps}s</p>
+
+</UL>
 </body>
 
 
