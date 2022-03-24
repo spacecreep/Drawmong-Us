@@ -24,6 +24,7 @@ function init() {
     }, false);
     addEventListener("mouseup", function (e) {
         findxy('up', e);
+        save()
         majcanva();
         save()
     }, false);
