@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="synchronisation du canva">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="6628c121-4952-4252-b0b7-03023adb8e5a" name="Changes" comment="Ajout de l'interface de vote">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/create_game.css" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/create_game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/paint.css" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/paint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,7 +288,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="" />
+      <changelist id="6628c121-4952-4252-b0b7-03023adb8e5a" name="Changes" comment="Ajout de l'interface de vote" />
       <created>1644401642116</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -295,6 +299,8 @@
       <workItem from="1646210561386" duration="1611000" />
       <workItem from="1646212603995" duration="864000" />
       <workItem from="1646213500328" duration="4268000" />
+      <workItem from="1648104952826" duration="343000" />
+      <workItem from="1648105318486" duration="3520000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>
@@ -324,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646823386028</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajout de l'interface de vote">
+      <created>1647423866075</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647423866075</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +357,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout d'un menu de création et de sélection de lobby" />
     <MESSAGE value="synchronisation du canva" />
-    <option name="LAST_COMMIT_MESSAGE" value="synchronisation du canva" />
+    <MESSAGE value="Ajout de l'interface de vote" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de l'interface de vote" />
   </component>
 </project>

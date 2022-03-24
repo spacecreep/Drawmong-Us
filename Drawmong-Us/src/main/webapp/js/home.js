@@ -22,5 +22,11 @@ function setCookie(nom, valeur, expire, chemin, domaine, securite){
         ((securite == true) ? '; secure' : '');
 }
 
+function ShowLobby(){
+    document.getElementById("create-lobby-button").style.display = "none";
+    document.getElementById("settings-form").style.display = "flex";
+    document.getElementById("Joueurs").style.display = "block";
+}
+
 var dtExpire = new Date();
 dtExpire.setTime(dtExpire.getTime() + 3600 * 1000);
