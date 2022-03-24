@@ -55,7 +55,7 @@ public class PaintEndpoint {
         this.numero = paintEndpoints.size();
         users.put(session.getId(), username);
         broadcast(new Message(username, "Connected !"));
-        broadcast(new Message(username, this.numero + "yes"));
+        broadcast(new Message(username, this.numero + "", "nb"));
     }
 
     /**
@@ -91,6 +91,8 @@ public class PaintEndpoint {
     public void onClose(Session session) {
         paintEndpoints.remove(this);
         broadcast(new Message(users.get(session.getId()), "Disconnected"));
+        broadcast(new Message(users.get(session.getId()), "-1"));
+        broadcast(new Message(users.get(session.getId()),"-1","nb"));
     }
 
     /**

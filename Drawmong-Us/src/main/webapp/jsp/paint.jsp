@@ -41,6 +41,7 @@
     </div>
 
 </div>
+
 <div>
     <form name="chronoForm">
         <input type="text" name="chronotime" id="chronotime" value=${temps}/>
@@ -95,7 +96,7 @@
 </div>
 <H1>Recapitulatif des informations</H1>
 <UL>
-
+    <p id = "nbjoueur"></p>
     <p>Probablitite des mots personnalises: ${proba}%</p>
     <p>mots: ${mots}</p>
     <p>langue: ${sessionScope['langue']}</p>
