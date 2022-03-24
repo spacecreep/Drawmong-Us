@@ -14,9 +14,7 @@
 
 
 
-<div id="logo" class="Title">
-    <img src="https://i.imgur.com/UR9GTdY.png?1">
-</div>
+
 <div id="titreJoue" class="Title">
     <h1>A toi de Jouer !</h1>
 </div>
@@ -26,7 +24,11 @@
 <div id="titreVote" class="Title">
     <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
 </div>
-
+<div id="logo" class="Title">
+    <a href="index.jsp">
+        <img src="https://i.imgur.com/UR9GTdY.png?1" alt="logo">
+    </a>
+</div>
 <div class="Select">
     <div>Choose Color</div>
     <div class=Color id="green" style="background-color: green" onclick="color(this)"></div>
@@ -179,9 +181,6 @@
         etat("obs");
         init();
         save();
-        /**etat("obs");
-        client.connect();
-         */
         chronoStart()
     }
 
