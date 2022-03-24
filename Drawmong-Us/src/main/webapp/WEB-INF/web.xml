@@ -11,9 +11,5 @@
         <param-name>org.apache.tomcat.websocket.binaryBufferSize</param-name>
         <param-value>524288</param-value>
     </context-param>
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.ico</url-pattern>
-    </servlet-mapping>
 
 </web-app>
