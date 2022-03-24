@@ -111,7 +111,7 @@
 <script type="text/javascript" src="js/paint.js"></script>
 <script src="js/chat.js"></script>
 <script type="application/javascript">
-    window.onload = chronoStart;
+    /**window.onload = chronoStart;*/
     function chrono(){
         end = new Date()
         diff = end - start
@@ -125,6 +125,12 @@
         }
         if (sec ==${temps}){
             chronoReset()
+            if (document.getElementById("canvasimg").className == "Disparu") {
+                etat('obs');
+            }
+            else if (document.getElementById("canvasimg").className == "Affiche"){
+                etat('jeu');
+            }
         }
         if(msec < 10){
             msec = "00" +msec
@@ -173,9 +179,9 @@
         init();
         save();
         /**etat("obs");
-
         client.connect();
          */
+        chronoStart()
     }
 
     function etat(eta){

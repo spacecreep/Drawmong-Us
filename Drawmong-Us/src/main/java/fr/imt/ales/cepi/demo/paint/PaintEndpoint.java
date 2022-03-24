@@ -27,6 +27,7 @@ public class PaintEndpoint {
      * Current session
      */
     private Session session;
+    private int numero;
 
     private static void broadcast(Message message) {
         paintEndpoints.forEach(endpoint -> {
@@ -51,8 +52,10 @@ public class PaintEndpoint {
     public void onOpen(Session session, @PathParam("username") String username) throws IOException, EncodeException {
         this.session = session;
         paintEndpoints.add(this);
+        this.numero = paintEndpoints.size();
         users.put(session.getId(), username);
-        broadcast(new Message(username, "Connected"));
+        broadcast(new Message(username, "Connected !"));
+        broadcast(new Message(username, this.numero + "yes"));
     }
 
     /**
