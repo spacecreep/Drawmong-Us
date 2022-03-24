@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="synchronisation du canva">
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +285,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="" />
+      <changelist id="6628c121-4952-4252-b0b7-03023adb8e5a" name="Changes" comment="Ajout de l'interface de vote" />
       <created>1644401642116</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -296,9 +296,6 @@
       <workItem from="1646210561386" duration="1611000" />
       <workItem from="1646212603995" duration="864000" />
       <workItem from="1646213500328" duration="4268000" />
-      <workItem from="1647413772482" duration="12990000" />
-      <workItem from="1648105224899" duration="2559000" />
-      <workItem from="1648108314986" duration="960000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>
@@ -328,28 +325,7 @@
       <option name="project" value="LOCAL" />
       <updated>1646823386028</updated>
     </task>
-    <task id="LOCAL-00005" summary="synchronisation du canva">
-      <created>1646823781073</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1646823781073</updated>
-    </task>
-    <task id="LOCAL-00006" summary="synchronisation du canva">
-      <created>1647418446894</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647418446894</updated>
-    </task>
-    <task id="LOCAL-00007" summary="synchronisation du canva">
-      <created>1647425642784</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1647425642784</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +345,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout d'un menu de création et de sélection de lobby" />
     <MESSAGE value="synchronisation du canva" />
-    <option name="LAST_COMMIT_MESSAGE" value="synchronisation du canva" />
+    <MESSAGE value="Ajout de l'interface de vote" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de l'interface de vote" />
   </component>
 </project>
