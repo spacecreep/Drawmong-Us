@@ -10,6 +10,12 @@ h1 {
     text-align: center;
     vertical-align: text-top;
     font-size: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    background-color: #9131a8;
+    display:block
 }
 
 h2 {
@@ -86,6 +92,7 @@ h2 {
     border-radius: 10px;
     border-color: black;
     display:inline-block;
+    background-color: #9131a8;
     margin-bottom: 1px;
 }
 
@@ -124,6 +131,10 @@ h2 {
 #log {
     resize: none;
     width: 500px;
+}
+
+#logo {
+    display:inline-block;
 }
 
 #msg {
