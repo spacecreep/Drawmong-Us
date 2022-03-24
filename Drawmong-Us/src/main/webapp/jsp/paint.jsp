@@ -41,7 +41,13 @@
     </div>
 
 </div>
-
+<div>
+    <form name="chronoForm">
+        <input type="text" name="chronotime" id="chronotime" value=${temps}/>
+        <input type="button" name="startstop" value="start!" onClick="chronoStart()" />
+        <input type="button" name="reset" value="reset!" onClick="chronoReset()" />
+    </form>
+</div>
 
 <div style="display: flex">
     <span id="interface">
@@ -105,6 +111,60 @@
 <script type="text/javascript" src="js/paint.js"></script>
 <script src="js/chat.js"></script>
 <script type="application/javascript">
+    window.onload = chronoStart;
+    function chrono(){
+        end = new Date()
+        diff = end - start
+        diff = new Date(diff)
+        var sec = diff.getSeconds()
+        var msec = diff.getMilliseconds()
+
+
+        if (sec < 10){
+            sec = "0" + sec
+        }
+        if (sec ==${temps}){
+            chronoReset()
+        }
+        if(msec < 10){
+            msec = "00" +msec
+        }
+        else if(msec < 100){
+            msec = "0" +msec
+        }
+
+        document.getElementById("chronotime").value = sec + ":" + msec
+        timerID = setTimeout("chrono()", 10)
+    }
+    function chronoStart(){
+        document.chronoForm.startstop.value = "stop!"
+        document.chronoForm.startstop.onclick = chronoStop
+        document.chronoForm.reset.onclick = chronoReset
+        start = new Date()
+        chrono()
+    }
+    function chronoContinue(){
+        document.chronoForm.startstop.value = "stop!"
+        document.chronoForm.startstop.onclick = chronoStop
+        document.chronoForm.reset.onclick = chronoReset
+        start = new Date()-diff
+        start = new Date(start)
+        chrono()
+    }
+    function chronoReset(){
+        document.getElementById("chronotime").value = "00"
+        start = new Date()
+    }
+    function chronoStopReset(){
+        document.getElementById("chronotime").value = "00"
+        document.chronoForm.startstop.onclick = chronoStart
+    }
+    function chronoStop(){
+        document.chronoForm.startstop.value = "start!"
+        document.chronoForm.startstop.onclick = chronoContinue
+        document.chronoForm.reset.onclick = chronoStopReset
+        clearTimeout(timerID)
+    }
     const client = new ChatClient();
 
     function debut(){
