@@ -24,6 +24,7 @@ class ChatClient {
             let message = JSON.parse(event.data);
             if (message.type == "img") {
                 document.getElementById("canvasimg").src = message.content;
+                majcanva();
             } else {
                 let log = document.getElementById("log");
                 let message = JSON.parse(event.data);
