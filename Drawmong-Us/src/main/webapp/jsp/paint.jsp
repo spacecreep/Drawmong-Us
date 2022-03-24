@@ -54,7 +54,7 @@
 
     <span class=ChatBox>
         <h2 id="titreChat">Chat</h2>
-        <textarea readonly="true" rows="10" cols="80" id="log" ></textarea>
+        <textarea readonly="true" rows="22" cols="80" id="log" ></textarea>
         <div id="envoiMes">
             <input type="text" size="51" id="msg" placeholder="Message" />
             <button type="button" onclick="client.send();">Send</button>
