@@ -7,6 +7,7 @@ var canvas, ctx, flag = false,
 
 var x = "black",
     y = 2;
+let taille = "petit";
 
 function init() {
     //setCookie('pseudo', 'aaaaaaaa', dtExpire,'/' );
@@ -36,6 +37,36 @@ function color(obj) {
         case "green":
             x = "green";
             break;
+        case "coral":
+            x = "coral";
+            break;
+        case "greenyellow":
+            x = "greenyellow";
+            break;
+        case "seagreen":
+            x = "seagreen";
+            break;
+        case "darkblue":
+            x = "darkblue";
+            break;
+        case "mediumpurple":
+            x = "mediumpurple";
+            break;
+        case "cyan":
+            x = "cyan";
+            break;
+        case "pink":
+            x = "pink";
+            break;
+        case "purple":
+            x = "purple";
+            break;
+        case "brown":
+            x = "brown";
+            break;
+        case "grey":
+            x = "grey";
+            break;
         case "blue":
             x = "blue";
             break;
@@ -54,9 +85,23 @@ function color(obj) {
         case "white":
             x = "white";
             break;
+        case "petit":
+            taille = "petit";
+            break;
+        case "moyen":
+            taille = "moyen";
+            break;
+        case "grand":
+            taille = "grand";
+            break;
+        case "remplissage":
+            taille = "remplissage";
+            break;
     }
-    if (x === "white") y = 14;
-    else y = 2;
+    if (taille === "remplissage") y = 1000;
+    else if (taille === "petit") y = 5;
+    else if (taille === "moyen") y = 14;
+    else if (taille === "grand") y = 30;
 
 
 }

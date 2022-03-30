@@ -26,7 +26,10 @@ h2 {
 .Button {
     display: block;
 }
-
+img.center {
+    display: block;
+    margin: 0 auto;
+}
 .Whiteboard {
     background-color: white;
     border-width: 2px;
@@ -50,6 +53,30 @@ h2 {
 .Color {
     height: 10px;
     width: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+.tinysize {
+    height: 5px;
+    width: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+.middlesize {
+    height: 10px;
+    width: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    display: inline-block;
+}
+.bigsize {
+    height: 20px;
+    width: 20px;
     border-width: 1px;
     border-style: solid;
     border-color: black;

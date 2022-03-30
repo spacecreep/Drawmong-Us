@@ -14,8 +14,8 @@
 
 
 
-<div id="logo" class="Title">
-    <img src="https://i.imgur.com/UR9GTdY.png?1">
+<div style="border: 1px solid black;">
+    <img class="center" src ="https://i.imgur.com/UR9GTdY.png?1" >
 </div>
 <div id="titreJoue" class="Title">
     <h1>A toi de Jouer !</h1>
@@ -27,20 +27,6 @@
     <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
 </div>
 
-<div class="Select">
-    <div>Choose Color</div>
-    <div class=Color id="green" style="background-color: green" onclick="color(this)"></div>
-    <div class=Color id="blue" style="background-color: blue" onclick="color(this)"></div>
-    <div class=Color id="red" style="background-color: red" onclick="color(this)"></div>
-    <div class=Color id="yellow" style="background-color: yellow" onclick="color(this)"></div>
-    <div class=Color id="orange" style="background-color: orange" onclick="color(this)"></div>
-    <div class=Color id="black" style="background-color: black" onclick="color(this)"></div>
-    <div class=Eraser>
-        <div>Eraser</div>
-        <div class=Eraser_click id="white" style="background-color: white"   onclick="color(this)"></div>
-    </div>
-
-</div>
 
 <div>
     <form name="chronoForm">
@@ -51,6 +37,38 @@
 </div>
 
 <div style="display: flex">
+    <div class="Select">
+        <div>Choisis la couleur</div>
+        <div class=Color id="grey" style="background-color: grey" onclick="color(this)"></div>
+        <div class=Color id="red" style="background-color: red" onclick="color(this)"></div>
+        <div class=Color id="orange" style="background-color: orange" onclick="color(this)"></div>
+        <div class=Color id="yellow" style="background-color: yellow" onclick="color(this)"></div>
+        <div class=Color id="green" style="background-color: green" onclick="color(this)"></div>
+        <div class=Color id="cyan" style="background-color: cyan" onclick="color(this)"></div>
+        <div class=Color id="blue" style="background-color: blue" onclick="color(this)"></div>
+        <div class=Color id="purple" style="background-color: purple" onclick="color(this)"></div>
+        <br>
+        <div class=Color id="black" style="background-color: black" onclick="color(this)"></div>
+        <div class=Color id="brown" style="background-color: saddlebrown" onclick="color(this)"></div>
+        <div class=Color id="coral" style="background-color: coral" onclick="color(this)"></div>
+        <div class=Color id="greenyellow" style="background-color: greenyellow" onclick="color(this)"></div>
+        <div class=Color id="seagreen" style="background-color: mediumseagreen" onclick="color(this)"></div>
+        <div class=Color id="darkblue" style="background-color: darkslateblue" onclick="color(this)"></div>
+        <div class=Color id="mediumpurple" style="background-color: mediumpurple" onclick="color(this)"></div>
+        <div class=Color id="pink" style="background-color: hotpink" onclick="color(this)"></div>
+
+        <div>Choisis la taille</div>
+        <div class=tinysize id="petit" style="background-color: black" onclick="color(this)"></div>
+        <div class=middlesize id="moyen" style="background-color: black" onclick="color(this)"></div>
+        <div class=bigsize id="grand" style="background-color: black" onclick="color(this)"></div>
+        <img src="https://i.imgur.com/WGN7g7x.png?1"  id="remplissage" onclick="color(this)">
+        <div class=Eraser>
+            <div>Gomme</div>
+            <div class=Eraser_click id="white" style="background-color: white"   onclick="color(this)"></div>
+        </div>
+
+    </div>
+
     <span id="interface">
 
     <canvas id="can" class="Whiteboard" height="500px" width="500px"></canvas>
@@ -124,6 +142,7 @@
         if (sec < 10){
             sec = "0" + sec
         }
+
         if (sec ==${temps}){
             chronoReset()
             if (document.getElementById("canvasimg").className == "Disparu") {
