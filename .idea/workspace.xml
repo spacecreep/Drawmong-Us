@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="synchronisation du canva">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/paint.css" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/css/paint.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/paint.js" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/paint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="Ajout choix taille et couleur sur le paint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,7 +293,7 @@
       <workItem from="1646213500328" duration="4268000" />
       <workItem from="1648118149333" duration="1441000" />
       <workItem from="1648201471502" duration="13648000" />
-      <workItem from="1648537219845" duration="3452000" />
+      <workItem from="1648537219845" duration="4008000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>
@@ -329,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646823386028</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajout choix taille et couleur sur le paint">
+      <created>1648625249978</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648625249978</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +351,7 @@
     <MESSAGE value="Ajout d'un menu de création et de sélection de lobby" />
     <MESSAGE value="synchronisation du canva" />
     <MESSAGE value="Ajout de l'interface de vote" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de l'interface de vote" />
+    <MESSAGE value="Ajout choix taille et couleur sur le paint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout choix taille et couleur sur le paint" />
   </component>
 </project>

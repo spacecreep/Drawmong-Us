@@ -24,10 +24,8 @@
 <div id="titreVote" class="Title">
     <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
 </div>
-<div id="logo" class="Title">
-    <a href="index.jsp">
-        <img src="https://i.imgur.com/UR9GTdY.png?1" alt="logo">
-    </a>
+<div style="border: 1px solid black;">
+    <img class="center" src ="https://i.imgur.com/UR9GTdY.png?1" >
 </div>
 
 <div>
