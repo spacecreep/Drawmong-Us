@@ -14,9 +14,7 @@
 
 
 
-<div style="border: 1px solid black;">
-    <img class="center" src ="https://i.imgur.com/UR9GTdY.png?1" >
-</div>
+
 <div id="titreJoue" class="Title">
     <h1>A toi de Jouer !</h1>
 </div>
@@ -26,7 +24,11 @@
 <div id="titreVote" class="Title">
     <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
 </div>
-
+<div id="logo" class="Title">
+    <a href="index.jsp">
+        <img src="https://i.imgur.com/UR9GTdY.png?1" alt="logo">
+    </a>
+</div>
 
 <div>
     <form name="chronoForm">
@@ -142,7 +144,6 @@
         if (sec < 10){
             sec = "0" + sec
         }
-
         if (sec ==${temps}){
             chronoReset()
             if (document.getElementById("canvasimg").className == "Disparu") {
@@ -198,9 +199,6 @@
         etat("obs");
         init();
         save();
-        /**etat("obs");
-        client.connect();
-         */
         chronoStart()
     }
 

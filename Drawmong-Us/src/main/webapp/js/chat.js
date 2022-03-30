@@ -30,7 +30,7 @@ class ChatClient {
                     let i = document.getElementById("nbjoueur").innerText.substring(20);
                     let g = parseInt(i);
                     let j = g - 1;
-                    document.getElementById("nbjoueur").innerText = "Nombre de ourangoutans : " + j + "";
+                    document.getElementById("nbjoueur").innerText = "Nombre de joueurs : " + j + "";
 
                 }
                 else {
