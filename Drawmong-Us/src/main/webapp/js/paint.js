@@ -27,7 +27,6 @@ function init() {
         findxy('up', e);
         save()
         majcanva();
-        save()
     }, false);
 
 }
@@ -110,6 +109,7 @@ function draw() {
     ctx.beginPath();
     ctx.moveTo(prevX, prevY);
     ctx.lineTo(currX, currY);
+    ctx.fillStyle = "radial";
     ctx.strokeStyle = x;
     ctx.lineWidth = y;
     ctx.stroke();
@@ -145,6 +145,7 @@ function findxy(res, e) {
         dot_flag = true;
         if (dot_flag) {
             ctx.beginPath();
+            ctx.fillStyle = "radial";
             ctx.fillStyle = x;
             ctx.fillRect(currX, currY, 2, 2);
             ctx.closePath();
