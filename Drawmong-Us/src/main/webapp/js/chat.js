@@ -12,8 +12,6 @@ class ChatClient {
         let username = getCookie('pseudo');
         let host = document.location.host;
         let pathname = document.location.pathname.split("/");
-        console.log(username);
-        console.log(pathname);
         // connect using the same base URL as the current document location
         this.webSocket = new WebSocket("ws://" + host + "/" + pathname[1] + "/paint/" + username);
         // Listen to the messages from the server

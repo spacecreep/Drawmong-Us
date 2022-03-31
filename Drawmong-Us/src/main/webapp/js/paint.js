@@ -110,10 +110,10 @@ function draw() {
     ctx.beginPath();
     ctx.moveTo(prevX, prevY);
     ctx.lineTo(currX, currY);
-    ctx.fillStyle = "radial";
     ctx.strokeStyle = x;
     ctx.lineWidth = y;
     ctx.stroke();
+    ctx.lineCap = "round";
     ctx.closePath();
 }
 /**
@@ -146,9 +146,10 @@ function findxy(res, e) {
         dot_flag = true;
         if (dot_flag) {
             ctx.beginPath();
-            ctx.fillStyle = "radial";
             ctx.fillStyle = x;
-            ctx.fillRect(currX, currY, 2, 2);
+            ctx.lineCap = "round";
+            ctx.fillRect(currX, currY, y/2, y/2);
+            ctx.stroke();
             ctx.closePath();
             dot_flag = false;
         }
@@ -189,5 +190,5 @@ dtExpire.setTime(dtExpire.getTime() + 3600 * 1000);
 function majcanva() {
     var canvas = document.getElementById('can');
     var ctx = canvas.getContext('2d');
-        ctx.drawImage(document.getElementById('canvasimg'),0,0,500,500,0,0,500,500);
+        ctx.drawImage(document.getElementById('canvasimg'),0,0,500,800,0,0,500,800);
     }

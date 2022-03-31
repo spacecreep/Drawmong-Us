@@ -113,6 +113,9 @@ img.center {
     display: inline-block;
 }
 
+.center{
+}
+
 .ChatBox {
     border-width: 2px;
     border-style: solid;
@@ -121,6 +124,7 @@ img.center {
     display:inline-block;
     background-color: #9131a8;
     margin-bottom: 1px;
+    font-family: 'Nunito',Arial, sans-serif;
 }
 
 .Votes{

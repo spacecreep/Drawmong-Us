@@ -15,6 +15,7 @@
 
 
 
+
 <div id="titreJoue" class="Title">
     <h1>A toi de Jouer !</h1>
 </div>
@@ -23,9 +24,6 @@
 </div>
 <div id="titreVote" class="Title">
     <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
-</div>
-<div style="border: 1px solid black;">
-    <img class="center" src ="https://i.imgur.com/UR9GTdY.png?1" >
 </div>
 
 <div>
@@ -71,7 +69,7 @@
 
     <span id="interface">
 
-    <canvas id="can" class="Whiteboard" height="500px" width="500px"></canvas>
+    <canvas id="can" class="Whiteboard" height="500px" width="800px"></canvas>
 
 
     <img id="canvasimg" class="Affiche" >
