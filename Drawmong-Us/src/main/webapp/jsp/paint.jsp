@@ -109,6 +109,7 @@
     <button id="jeu" onclick="etat('jeu')">jouer</button>
     <button id="obs" onclick="etat('obs')">observer</button>
     <button id="vote" onclick="etat('Vote')">voter</button>
+    <button id="start" onclick="client.start()">Start</button>
 </div>
 <H1>Recapitulatif des informations</H1>
 <UL>
@@ -202,7 +203,6 @@
         etat("obs");
         init();
         save();
-        chronoStart()
     }
 
     function etat(eta){

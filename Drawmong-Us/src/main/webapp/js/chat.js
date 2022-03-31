@@ -17,9 +17,15 @@ class ChatClient {
         // Listen to the messages from the server
         this.webSocket.onmessage = (event) => {
             // Print the message on the browser console
-                //console.log(event.data);
+            //console.log(event.data);
             // Append the message to the log field
             let message = JSON.parse(event.data);
+            if (message.type == "start") {
+                let log = document.getElementById("log");
+                let message = JSON.parse(event.data);
+                log.innerHTML += message.from + " : " + message.content + "\n";
+                chronoStart();
+            }
             if (message.type == "img") {
                 document.getElementById("canvasimg").src = message.content;
                 majcanva();
@@ -27,25 +33,23 @@ class ChatClient {
                 if (!document.getElementById("numerojoueur").innerText) {
                     document.getElementById("numerojoueur").innerText = message.content
                 }
-                if (message.content == "-1"){
+                if (message.content == "-1") {
                     let i = document.getElementById("nbjoueur").innerText.substring(20);
                     let g = parseInt(i);
                     let j = g - 1;
                     document.getElementById("nbjoueur").innerText = "Nombre de joueurs : " + j + "";
 
-                }
-                else {
+                } else {
 
                     document.getElementById("nbjoueur").innerText = "Nombre de joueurs : " + message.content;
                 }
-            }
-            else {
+            } else {
                 let log = document.getElementById("log");
                 let message = JSON.parse(event.data);
                 log.innerHTML += message.from + " : " + message.content + "\n";
 
             }
-           };
+        };
     }
 
     /** Send the content of the message field to the server, in JSON */
@@ -57,14 +61,22 @@ class ChatClient {
     }
 
     sendimg() {
-        let json = JSON.stringify( {
+        let json = JSON.stringify({
             "content": document.getElementById("canvasimg").src,
             "type": "img"
         })
         this.webSocket.send(json);
     }
-}
 
+    start() {
+        let json = JSON.stringify({
+            "content": "",
+            "type": "start"
+        })
+        this.webSocket.send(json);
+        chronoStart();
+    }
+}
 function getCookie(name){
     if(document.cookie.length == 0)
         return null;
@@ -80,4 +92,6 @@ function getCookie(name){
         }
     }
     return null;
+
+
 }
