@@ -80,7 +80,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -280,7 +280,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="synchronisation du canva" />
+      <changelist id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="Nombre de joueurs en temps réel dans paint en mieux" />
       <created>1644401642116</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -291,9 +291,8 @@
       <workItem from="1646210561386" duration="1611000" />
       <workItem from="1646212603995" duration="864000" />
       <workItem from="1646213500328" duration="4268000" />
-      <workItem from="1648118149333" duration="1441000" />
-      <workItem from="1648201471502" duration="13648000" />
-      <workItem from="1648537219845" duration="4008000" />
+      <workItem from="1648706984110" duration="74000" />
+      <workItem from="1648707266791" duration="7096000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>
@@ -323,14 +322,35 @@
       <option name="project" value="LOCAL" />
       <updated>1646823386028</updated>
     </task>
-    <task id="LOCAL-00005" summary="Ajout choix taille et couleur sur le paint">
-      <created>1648625249978</created>
+    <task id="LOCAL-00005" summary="synchronisation du canva en mieux mieux">
+      <created>1648110820956</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1648625249978</updated>
+      <updated>1648110820957</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="paint le chrono">
+      <created>1648115218678</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648115218678</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Nombre de joueurs en temps réel dans paint">
+      <created>1648118084645</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648118084645</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Nombre de joueurs en temps réel dans paint en mieux">
+      <created>1648119261785</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648119261785</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +371,11 @@
     <MESSAGE value="Ajout d'un menu de création et de sélection de lobby" />
     <MESSAGE value="synchronisation du canva" />
     <MESSAGE value="Ajout de l'interface de vote" />
-    <MESSAGE value="Ajout choix taille et couleur sur le paint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout choix taille et couleur sur le paint" />
+    <MESSAGE value="synchronisation du canva en mieux" />
+    <MESSAGE value="synchronisation du canva en mieux mieux" />
+    <MESSAGE value="paint le chrono" />
+    <MESSAGE value="Nombre de joueurs en temps réel dans paint" />
+    <MESSAGE value="Nombre de joueurs en temps réel dans paint en mieux" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nombre de joueurs en temps réel dans paint en mieux" />
   </component>
 </project>
