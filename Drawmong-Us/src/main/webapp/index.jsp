@@ -19,10 +19,11 @@
 </head>
 
 <body>
+
 <div>
-    <h1>Drawmong-Us</h1>
-    <a href="paint">Paint</a>
+    <img class="center" src ="https://i.imgur.com/UR9GTdY.png?1" >
 </div>
+
 
 <div class="BaseInterface" id="BaseInterface">
     <div class="ChooseName" id="ChooseName">

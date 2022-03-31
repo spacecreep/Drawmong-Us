@@ -147,8 +147,8 @@ function findxy(res, e) {
         if (dot_flag) {
             ctx.beginPath();
             ctx.fillStyle = x;
-            ctx.lineCap = "round";
-            ctx.fillRect(currX, currY, y/2, y/2);
+            ctx.arc(currX,currY,y/15,0,7);
+            ctx.fill();
             ctx.stroke();
             ctx.closePath();
             dot_flag = false;

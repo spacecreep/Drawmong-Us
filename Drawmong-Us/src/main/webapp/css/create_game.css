@@ -22,7 +22,6 @@ body{
 }
 
 .ChooseName{
-    margin-top: 20%;
     width: fit-content;
     text-align: center;
 }
@@ -100,6 +99,7 @@ body{
 /* display: block causes the element to be visible, since the default value is none */
 #create-lobby {
     display: block;
+    bottom: auto;
 }
 
 .join-lobby-data {
