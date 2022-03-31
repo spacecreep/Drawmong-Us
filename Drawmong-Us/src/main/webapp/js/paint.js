@@ -190,5 +190,5 @@ dtExpire.setTime(dtExpire.getTime() + 3600 * 1000);
 function majcanva() {
     var canvas = document.getElementById('can');
     var ctx = canvas.getContext('2d');
-        ctx.drawImage(document.getElementById('canvasimg'),0,0,500,800,0,0,500,800);
+        ctx.drawImage(document.getElementById('canvasimg'),0,0,800,500,0,0,800,500);
     }
