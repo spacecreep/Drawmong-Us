@@ -26,6 +26,9 @@ class ChatClient {
                 document.getElementById("canvasimg").src = message.content;
                 majcanva();
             } else if (message.type == "nb") {
+                if (!document.getElementById("numerojoueur").innerText) {
+                    document.getElementById("numerojoueur").innerText = message.content
+                }
                 if (message.content == "-1"){
                     let i = document.getElementById("nbjoueur").innerText.substring(20);
                     let g = parseInt(i);

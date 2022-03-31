@@ -27,6 +27,7 @@ function init() {
         findxy('up', e);
         save();
         majcanva();
+        save();
     }, false);
 
 }

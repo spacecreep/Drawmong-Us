@@ -114,6 +114,8 @@
 </div>
 <H1>Recapitulatif des informations</H1>
 <UL>
+    <p id = "numerotour">0</p>
+    <p id = "numerojoueur"></p>
     <p id = "nbjoueur"></p>
     <p>Probablitite des mots personnalises: ${proba}%</p>
     <p>mots: ${mots}</p>
@@ -143,11 +145,16 @@
             sec = "0" + sec
         }
         if (sec ==${temps}){
-            chronoReset()
-            if (document.getElementById("canvasimg").className == "Disparu") {
-                etat('obs');
+            if (parseInt(document.getElementById("numerotour").innerText) > parseInt(document.getElementById("nbjoueur").innerText.substring(20))) {
+                document.getElementById("numerotour").innerText = "0"
             }
-            else if (document.getElementById("canvasimg").className == "Affiche"){
+            document.getElementById("numerotour").innerText = parseInt(document.getElementById("numerotour").innerText) + 1 + "";
+            chronoReset()
+            if (parseInt(document.getElementById("numerojoueur").innerText) != parseInt(document.getElementById("numerotour").innerText)) {
+                etat('obs');
+                console.log("oops")
+            }
+            else {
                 etat('jeu');
             }
         }
