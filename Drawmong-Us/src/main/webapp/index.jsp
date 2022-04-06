@@ -5,6 +5,7 @@
   Time: 10:05
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 
@@ -19,17 +20,18 @@
 </head>
 
 <body>
-
 <div>
-    <img class="center" src ="https://i.imgur.com/UR9GTdY.png?1" >
+    <h1>Drawmong-Us</h1>
+    <a href="paint">Paint</a>
 </div>
-
 
 <div class="BaseInterface" id="BaseInterface">
     <div class="ChooseName" id="ChooseName">
         <h3>Entrez votre pseudo</h3>
         <input id="PseudoInput">
-        <button onclick="EnterPseudo()">OK</button>
+        <form action="login" method="POST">
+            <button onclick="EnterPseudo()" name="pseudo">OK</button>
+        </form>
     </div>
 
     <div class="LobbySelection" id="LobbySelection">
