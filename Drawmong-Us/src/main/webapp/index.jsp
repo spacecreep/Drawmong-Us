@@ -30,7 +30,7 @@
         <h3>Entrez votre pseudo</h3>
         <input id="PseudoInput">
         <form action="login" method="POST">
-            <button onclick="EnterPseudo()" name="pseudo">OK</button>
+            <button type="submit" onclick="EnterPseudo()" name="pseudo">OK</button>
         </form>
     </div>
 

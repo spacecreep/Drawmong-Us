@@ -12,7 +12,7 @@ import javax.servlet.http.*;
 
 public class Login extends HttpServlet{
 
-    public void doGet(HttpServletRequest request,
+    public void doPost(HttpServletRequest request,
                       HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -24,6 +24,7 @@ public class Login extends HttpServlet{
 
         System.out.println("OOOOOOOOOOKKKKKKKKKK");
 
+        request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
     }}
 
 
