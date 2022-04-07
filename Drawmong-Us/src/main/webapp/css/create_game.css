@@ -1,3 +1,11 @@
+:root{
+    --color-main:#9131a8;
+    --color-background:#b979c5;
+    --gradient-background:linear-gradient(to bottom right,#b979c5, #791cf8);
+    --color-3:#791cf8;
+    --color-4:#6600ff;
+}
+
 body{
     font-family: 'Nunito', Arial, sans-serif;
     background-color: #a16eb5;
@@ -15,7 +23,7 @@ body{
     margin: 0 auto;
     width: 50%;
     height: 70%;
-    background-color: #a57eb9;
+    --gradient-background:linear-gradient(to bottom right,#b979c5, #58c140);
     border-radius: 10px;
     justify-content: center;
     display: flex;

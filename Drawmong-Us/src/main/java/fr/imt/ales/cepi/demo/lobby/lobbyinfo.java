@@ -1,10 +1,6 @@
 package fr.imt.ales.cepi.demo.lobby;
 
-import fr.imt.ales.cepi.demo.Server;
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 import javax.servlet.*;
 
@@ -30,23 +26,7 @@ public class lobbyinfo extends HttpServlet{
         session.setAttribute("mots",request.getParameter("custom_words"));
         session.setAttribute("proba",request.getParameter("custom_words_chance"));
 
-
-        Server.getInstance().createLobby(1,request.getParameter("language"),
-                Integer.parseInt(request.getParameter("drawing_time")),
-                Integer.parseInt(request.getParameter("rounds")),
-                Integer.parseInt(request.getParameter("max_players")),
-                Boolean.parseBoolean(request.getParameter("public")),
-                getListFromString(request.getParameter("custom_words")),
-                Integer.parseInt(request.getParameter("custom_words_chance"))
-                );
-
         request.getRequestDispatcher("jsp/paint.jsp").forward(request, response);
-
-        System.out.println(Server.getInstance().lobbies.size());
-    }
-
-    private ArrayList<String> getListFromString(String s){
-        return new ArrayList<String>(Arrays.asList(s.split(", ")));
     }
 }
 
