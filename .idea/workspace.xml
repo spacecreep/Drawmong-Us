@@ -298,6 +298,7 @@
       <workItem from="1646213500328" duration="4268000" />
       <workItem from="1648706984110" duration="74000" />
       <workItem from="1648707266791" duration="7096000" />
+      <workItem from="1649314458193" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>
@@ -362,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649252524293</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="code du serveur ajouté">
+      <created>1649270489491</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649270489491</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -29,9 +29,7 @@
     <div class="ChooseName" id="ChooseName">
         <h3>Entrez votre pseudo</h3>
         <input id="PseudoInput">
-        <form action="login" method="POST">
-            <button type="submit" onclick="EnterPseudo()" name="pseudo">OK</button>
-        </form>
+            <button type="button" onclick="EnterPseudo()" name="pseudo">OK</button>
     </div>
 
     <div class="LobbySelection" id="LobbySelection">

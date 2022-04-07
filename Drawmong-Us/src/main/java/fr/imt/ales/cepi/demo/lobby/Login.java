@@ -22,7 +22,7 @@ public class Login extends HttpServlet{
         // Puis on login le joueur
         session.setAttribute("player",new Player(request.getParameter("pseudo")));
 
-        System.out.println("OOOOOOOOOOKKKKKKKKKK");
+        System.out.println("OK");
 
         request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
     }}
