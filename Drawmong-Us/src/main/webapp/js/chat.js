@@ -23,8 +23,12 @@ class ChatClient {
             if (message.type == "start") {
                 let log = document.getElementById("log");
                 let message = JSON.parse(event.data);
-                if (document.getElementById("numerojoueur").innerText == message.content){
-                    log.innerHTML += "Tu es imposteur !" + "\n";
+                if (document.getElementById("numerojoueur").innerText == message.content) {
+                    log.innerHTML += message.from + " : " + "Tu es l'imposteur !" + "\n";
+                    document.getElementById("afficheMot").innerText = "Tu es l'imposteur !";
+                }
+                else {
+                    document.getElementById("afficheMot").innerText = "Là y a le truc à dessiner";
                 }
                 chronoStart();
             }
@@ -73,7 +77,7 @@ class ChatClient {
     start() {
         let min = 1;
         let max = parseInt(document.getElementById("nbjoueur").innerText.substring(20));
-        let imposter = Math.floor(Math.random() * (max - min + 1) + min)
+        let imposter = Math.floor(Math.random() * (max - min) + min);
         let json = JSON.stringify({
             "content": imposter + "",
             "type": "start"

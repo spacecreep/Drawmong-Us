@@ -64,6 +64,7 @@
             <div>Gomme</div>
             <div class=Eraser_click id="white" style="background-color: white"   onclick="color(this)"></div>
         </div>
+        <div id="afficheMot">
         <div class="afficheMot">
 
         </div>
@@ -89,19 +90,19 @@
     <span id="Votes" class="Votes">
         <div class="votediv">
             <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-            <button class="voteButton" style="margin: 5px">Voter</button>
+            <button style="margin: 5px">Voter</button>
         </div>
         <div class="votediv">
             <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-            <button class="voteButton" style="margin: 5px">Voter</button>
+            <button style="margin: 5px">Voter</button>
         </div>
         <div class="votediv">
             <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-            <button class="voteButton" style="margin: 5px">Voter</button>
+            <button style="margin: 5px">Voter</button>
         </div>
         <div class="votediv">
             <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-            <button class="voteButton" style="margin: 5px">Voter</button>
+            <button style="margin: 5px">Voter</button>
         </div>
 
     </span>
