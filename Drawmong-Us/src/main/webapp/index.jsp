@@ -29,9 +29,7 @@
     <div class="ChooseName" id="ChooseName">
         <h3>Entrez votre pseudo</h3>
         <input id="PseudoInput">
-        <form action="login" method="POST">
-            <button type="submit" onclick="EnterPseudo()" name="pseudo">OK</button>
-        </form>
+            <button onclick="EnterPseudo()" name="pseudo">OK</button>
     </div>
 
     <div class="LobbySelection" id="LobbySelection">
@@ -78,7 +76,6 @@
                             <form id="lobby-create" class="input-container" action="info" method="GET">
                                 <b>Langue</b>
                                 <select class="input-item" name="language" placeholder="Choose your language">
-                                    <option value="">--Choisissez une option--</option>
                                     <option value="francais">Francais</option>
                                     <option value="francais">Francais</option>
                                     <option value="francais">Francais</option>
@@ -86,13 +83,13 @@
                                 </select>
                                 <b>Temps de dessin (secondes) </b>
                                 <input class="input-item" type="number" name="drawing_time"
-                                       min=0 max=10/>
+                                       min=0 max=10 value="5" />
                                 <b>Manches</b>
                                 <input class="input-item" type="number" name="rounds"
-                                       min=0 max=10/>
+                                       min=0 max=10 value="4"/>
                                 <b>Nombre max de joueurs</b>
                                 <input class="input-item" type="number" name="max_players"
-                                       min=0 max=20/>
+                                       min=0 max=20 value="10" />
                                 <b>Room publique</b>
                                 <input class="input-item" type="checkbox" name="public" value="true"/>
                                 <b>Mots personnalises</b>

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="code du serveur ajouté">
-      <change afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/lobby.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" afterDir="false" />
@@ -90,8 +89,6 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\romai\IdeaProjects\Drawmong-Us\Drawmong-Us\src\main\webapp" />
-      <recent name="C:\Users\romai\IdeaProjects\Drawmong-Us\Drawmong-Us\src\main\webapp\jsp" />
       <recent name="C:\Users\Minffuuuueeeeeeenn\IdeaProjects\Drawmong-Us\Drawmong-Us\src\main\webapp" />
     </key>
   </component>
@@ -182,9 +179,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : fr.imt.ales.cepi.demo : PaintAndChatDemo-1.0.war (exploded)" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.58" ALTERNATIVE_JRE_ENABLED="false">
@@ -303,7 +298,6 @@
       <workItem from="1646213500328" duration="4268000" />
       <workItem from="1648706984110" duration="74000" />
       <workItem from="1648707266791" duration="7096000" />
-      <workItem from="1649314458193" duration="4322000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>
@@ -368,21 +362,7 @@
       <option name="project" value="LOCAL" />
       <updated>1649252524293</updated>
     </task>
-    <task id="LOCAL-00010" summary="code du serveur ajouté">
-      <created>1649270489491</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1649270489491</updated>
-    </task>
-    <task id="LOCAL-00011" summary="code du serveur ajouté">
-      <created>1649316557517</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1649316557517</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

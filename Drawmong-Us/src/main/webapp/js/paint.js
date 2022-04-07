@@ -107,6 +107,7 @@ function color(obj) {
 }
 
 function draw() {
+
     ctx.beginPath();
     ctx.moveTo(prevX, prevY);
     ctx.lineTo(currX, currY);
@@ -115,6 +116,8 @@ function draw() {
     ctx.stroke();
     ctx.lineCap = "round";
     ctx.closePath();
+    ctx.fillStyle = x;
+    ctx.fillRect(5, 5, 10, 20);
 }
 /**
 function erase() {
