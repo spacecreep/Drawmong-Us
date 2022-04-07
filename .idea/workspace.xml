@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="code du serveur ajouté">
+    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="cission de la page d'accueil en 2 pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -389,6 +388,7 @@
     <MESSAGE value="Nombre de joueurs en temps réel dans paint" />
     <MESSAGE value="Nombre de joueurs en temps réel dans paint en mieux" />
     <MESSAGE value="code du serveur ajouté" />
-    <option name="LAST_COMMIT_MESSAGE" value="code du serveur ajouté" />
+    <MESSAGE value="cission de la page d'accueil en 2 pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="cission de la page d'accueil en 2 pages" />
   </component>
 </project>

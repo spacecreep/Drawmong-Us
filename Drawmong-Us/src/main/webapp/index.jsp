@@ -28,8 +28,11 @@
 <div class="BaseInterface" id="BaseInterface">
     <div class="ChooseName" id="ChooseName">
         <h3>Entrez votre pseudo</h3>
-        <input id="PseudoInput">
-            <button onclick="EnterPseudo()" name="pseudo">OK</button>
+        <form action="login" method="post">
+            <input id="PseudoInput">
+            <button type="submit" name="pseudo">OK</button>
+        </form>
+
     </div>
 
     <div class="LobbySelection" id="LobbySelection">
