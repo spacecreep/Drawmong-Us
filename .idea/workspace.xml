@@ -85,13 +85,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Drawmong-Us-27205a7ac55d90f5f1c2dfa66f24ea0492eb83c9" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/workspace.xml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/.idea/workspace.xml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -395,6 +396,7 @@
     <MESSAGE value="Nombre de joueurs en temps réel dans paint" />
     <MESSAGE value="Nombre de joueurs en temps réel dans paint en mieux" />
     <MESSAGE value="Attribution de à qui c'est le tour" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attribution de à qui c'est le tour" />
+    <MESSAGE value="utilisation de thème dans les fichiers css pour changer le style plus facilement" />
+    <option name="LAST_COMMIT_MESSAGE" value="utilisation de thème dans les fichiers css pour changer le style plus facilement" />
   </component>
 </project>
