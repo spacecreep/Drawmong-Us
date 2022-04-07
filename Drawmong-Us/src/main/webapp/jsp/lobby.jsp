@@ -10,13 +10,13 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="image/ico" href="ressources/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="../ressources/favicon.ico"/>
     <title>Drawmong-Us</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/create_game.css">
-    <link rel="stylesheet" href="css/paint.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/create_game.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -24,17 +24,7 @@
     <h1>Drawmong-Us</h1>
     <a href="paint">Paint</a>
 </div>
-
 <div class="BaseInterface" id="BaseInterface">
-    <div class="ChooseName" id="ChooseName">
-        <h3>Entrez votre pseudo</h3>
-        <input id="PseudoInput">
-        <form action="login" method="POST">
-            <button type="submit" onclick="EnterPseudo()" name="pseudo">OK</button>
-        </form>
-    </div>
-
-    <div class="LobbySelection" id="LobbySelection">
         <div class="content-wrapper">
             <div class="tab-header">
                 <label for="create-lobby-tab-button">
@@ -164,7 +154,7 @@
                 </div>
             </div>
 
-        </div></div>
+        </div>
 </div>
 
 <script type="text/javascript">
@@ -285,7 +275,7 @@
     }
 
 </script>
-<script src="js/home.js"></script>
+<script src="../js/home.js"></script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@ public class Login extends HttpServlet{
 
         System.out.println("OK");
 
-        request.getRequestDispatcher("jsp/index.jsp").forward(request, response);
+        request.getRequestDispatcher("jsp/lobby.jsp").forward(request, response);
     }}
 
 
