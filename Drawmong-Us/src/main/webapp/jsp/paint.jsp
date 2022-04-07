@@ -64,7 +64,9 @@
             <div>Gomme</div>
             <div class=Eraser_click id="white" style="background-color: white"   onclick="color(this)"></div>
         </div>
+        <div id="afficheMot">
 
+    </div>
     </div>
 
     <span id="interface">

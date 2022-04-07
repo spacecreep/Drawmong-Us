@@ -23,10 +23,16 @@ class ChatClient {
             if (message.type == "start") {
                 let log = document.getElementById("log");
                 let message = JSON.parse(event.data);
-                log.innerHTML += message.from + " : " + message.content + "\n";
+                if (document.getElementById("numerojoueur").innerText == message.content) {
+                    log.innerHTML += message.from + " : " + "Tu es l'imposteur !" + "\n";
+                    document.getElementById("afficheMot").innerText = "Tu es l'imposteur !";
+                }
+                else {
+                    document.getElementById("afficheMot").innerText = "Là y a le truc à dessiner";
+                }
                 chronoStart();
             }
-            if (message.type == "img") {
+            else if (message.type == "img") {
                 document.getElementById("canvasimg").src = message.content;
                 majcanva();
             } else if (message.type == "nb") {
@@ -69,8 +75,11 @@ class ChatClient {
     }
 
     start() {
+        let min = 1;
+        let max = parseInt(document.getElementById("nbjoueur").innerText.substring(20));
+        let imposter = Math.floor(Math.random() * (max - min) + min);
         let json = JSON.stringify({
-            "content": "",
+            "content": imposter + "",
             "type": "start"
         })
         this.webSocket.send(json);
