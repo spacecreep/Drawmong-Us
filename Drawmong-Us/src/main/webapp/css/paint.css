@@ -1,9 +1,18 @@
+:root{
+    --color-main:#b979c5;
+    --color-background:#9131a8;
+    --gradient-background:linear-gradient(to bottom right,#9131a8, #791cf8);
+    --color-3:#791cf8;
+    --color-4:#6600ff;
+}
+
 body, head {
     font-family: 'Nunito', Arial, sans-serif;
 }
 
 body {
-    background-color: #a57eb9;
+    background:var(--gradient-background);
+    background-attachment: fixed;
 }
 
 h1 {
@@ -14,7 +23,7 @@ h1 {
     border-style: solid;
     border-radius: 10px;
     border-color: black;
-    background-color: #9131a8;
+    background-color:var(--color-main);
     display:block
 }
 
@@ -46,7 +55,7 @@ img.center {
     border-radius: 10px;
     border-color: black;
     display: inline-block;
-    background-color: #9131a8;
+    background-color: var(--color-main);
     margin-bottom: 5px;
 }
 
@@ -122,12 +131,16 @@ img.center {
     border-radius: 10px;
     border-color: black;
     display:inline-block;
-    background-color: #9131a8;
+    background-color: var(--color-main);
     margin-bottom: 1px;
 }
 
+.voteButton{
+    background-color: var(--color-main);
+}
+
 .Votes{
-    background-color: #1883ba;
+    background-color: var(--color-main);
     display: block;
     border-radius: 10px;
     border-width:2px;
@@ -137,13 +150,14 @@ img.center {
     max-width: 500px;
 }
 .votediv{
-    background-color: #3a768f;
+    background-color: var(--color-4);
     border-radius: 10px;
     border-width:2px;
     border-style:solid;
     border-color:black;
     margin: 10px;
     display: flex;
+    color: var(--color-main);
 }
 
 #boiteChat {
