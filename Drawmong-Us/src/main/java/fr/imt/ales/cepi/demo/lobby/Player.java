@@ -10,6 +10,7 @@ public class Player {
     public int id;
 
     public Player(String pseudo) {
+
         this.pseudo = pseudo;
         this.id = playerLogin(pseudo);
         Server.players.add(this);
