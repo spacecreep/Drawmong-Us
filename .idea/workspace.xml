@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="cission de la page d'accueil en 2 pages">
-      <change afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/JoinLobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Lobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Lobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/lobbyinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/lobbyinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/lobby.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="cission de la page d'accueil en 2 pages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,8 +38,8 @@
         <option value="XHTML File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -305,9 +294,6 @@
       <workItem from="1646213500328" duration="4268000" />
       <workItem from="1648706984110" duration="74000" />
       <workItem from="1648707266791" duration="7096000" />
-      <workItem from="1649429932543" duration="2902000" />
-      <workItem from="1649523643394" duration="781000" />
-      <workItem from="1649589167184" duration="2322000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>

@@ -10,13 +10,18 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="image/ico" href="ressources/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="ressources/images/favicon.ico"/>
     <title>Drawmong-Us</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/create_game.css">
     <link rel="stylesheet" href="css/paint.css">
+    <object type="audio/mpeg" data="musique.mp3" height="0" width="0">
+        <param name="filename" value="musique.mp3" />
+        <param name="autostart" value="true" />
+        <param name="loop" value="true" />
+    </object>
 </head>
 
 <body>
