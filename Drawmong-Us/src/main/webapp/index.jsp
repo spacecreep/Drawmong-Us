@@ -21,7 +21,7 @@
 
 <body>
 <div>
-    <h1>Drawmong-Us</h1>
+    <h1>Drawmong-Us </h1>
     <a href="paint">Paint</a>
 </div>
 
@@ -29,142 +29,12 @@
     <div class="ChooseName" id="ChooseName">
         <h3>Entrez votre pseudo</h3>
         <form action="login" method="post">
-            <input id="PseudoInput">
+            <input name="pseudo" id="PseudoInput">
             <button type="submit" name="pseudo">OK</button>
         </form>
 
     </div>
 
-    <div class="LobbySelection" id="LobbySelection">
-        <div class="content-wrapper">
-            <div class="tab-header">
-                <label for="create-lobby-tab-button">
-                    <input id="create-lobby-tab-button" class="custom-check-or-radio tab-button" type="radio"
-                           onclick="openTab('create-lobby')" name="tab" checked>
-                    <div class="tab-label">Creer partie</div>
-                </label>
-                <label for="join-lobby-tab-button">
-                    <input id="join-lobby-tab-button" class="custom-check-or-radio tab-button" type="radio"
-                           onclick="openTab('join-lobby')" name="tab">
-                    <div class="tab-label" >Rejoindre partie</div>
-                </label>
-            </div>
-
-
-            <div id="create-lobby" class="tab-content">
-                <h3 class="PseudoPlayer" id="PseudoPlayer">Bienvenue ....</h3>
-                <span id="Joueurs" class="Joueurs">
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-
-                </span>
-                <div class="center-container">
-                    <div class="content-container">
-                        <button id="create-lobby-button" onclick="ShowLobby()">Créer une partie</button>
-                        <div id="settings-form" class="settings-form">
-                            <form id="lobby-create" class="input-container" action="info" method="GET">
-                                <b>Langue</b>
-                                <select class="input-item" name="language" placeholder="Choose your language">
-                                    <option value="francais">Francais</option>
-                                    <option value="francais">Francais</option>
-                                    <option value="francais">Francais</option>
-                                    <option value="francais">Francais</option>
-                                </select>
-                                <b>Temps de dessin (secondes) </b>
-                                <input class="input-item" type="number" name="drawing_time"
-                                       min=0 max=10 value="5" />
-                                <b>Manches</b>
-                                <input class="input-item" type="number" name="rounds"
-                                       min=0 max=10 value="4"/>
-                                <b>Nombre max de joueurs</b>
-                                <input class="input-item" type="number" name="max_players"
-                                       min=0 max=20 value="10" />
-                                <b>Room publique</b>
-                                <input class="input-item" type="checkbox" name="public" value="true"/>
-                                <b>Mots personnalises</b>
-                                <textarea class="input-item" name="custom_words" style="resize: none"
-                                          placeholder="Ajoutez des mots, en les séparant par des virgules"></textarea>
-                                <b>Probabilite des mots personnalises</b>
-                                <div class="input-item" style="display: flex;">
-                                    0%
-                                    <input style="flex: 1;" type="range" name="custom_words_chance" min="1" max="100">
-                                    100%
-                                </div>
-                                <details class="advanced-section">
-                                    <summary>Parametres avances</summary>
-                                    <div class="input-container">
-                                        <b>Limite de joueur par IP</b>
-                                        <input class="input-item" type="number" name="clients_per_ip_limit"
-                                               min=0 max=10 />
-                                        <b>Autoriser le ban</b>
-                                        <input class="input-item" type="checkbox" name="enable_votekick" value="true" />
-                                    </div>
-                                </details>
-                                <button type="submit" class="create-button" form="lobby-create">
-                                    Creer la partie
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="join-lobby" class="tab-content">
-                <div class="join-lobby-data">
-                    <div class="table-wrapper-wrapper">
-                        <button id="refresh-button" onclick="loadLobbyTable()">Actualiser</button>
-                        <div class="table-wrapper">
-                            <table id="lobby-table">
-                                <thead>
-                                <tr>
-                                    <th>Langue</th>
-                                    <th>Manches</th>
-                                    <th>Joueurs</th>
-                                    <th>Temps de dessin</th>
-                                    <th>Mots</th>
-                                </tr>
-                                </thead>
-                                <tbody id="lobby-table-body">
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="lobby-details">
-                        <span class="lobby-detail">Langue:</span>
-                        <span id="wordpack-detail"></span>
-                        <span class="lobby-detail">Manches :</span>
-                        <span id="rounds-detail"></span>
-                        <span class="lobby-detail">Joueurs:</span>
-                        <span id="players-detail"></span>
-                        <span class="lobby-detail">Temps de dessin:</span>
-                        <span id="drawing-time-detail"></span>
-                        <span class="lobby-detail">Mots :</span>
-                        <span id="custom-words-detail"></span>
-                        <span class="lobby-detail">Ban autorise:</span>
-                        <span id="votekicking-detail"></span>
-                        <span class="lobby-detail">Limite de joueurs par IP:</span>
-                        <span id="max-clients-ip-detail"></span>
-                        <button id="join-button" onclick="onJoin()" disabled>Rejoindre partie</button>
-                    </div>
-                </div>
-            </div>
-
-        </div></div>
 </div>
 
 <script type="text/javascript">

@@ -11,6 +11,8 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
+import static java.lang.Integer.parseInt;
+
 @WebServlet("/info")
 
 public class lobbyinfo extends HttpServlet{
@@ -31,14 +33,18 @@ public class lobbyinfo extends HttpServlet{
         session.setAttribute("proba",request.getParameter("custom_words_chance"));
 
 
-        Server.getInstance().createLobby(1,request.getParameter("language"),
-                Integer.parseInt(request.getParameter("drawing_time")),
-                Integer.parseInt(request.getParameter("rounds")),
-                Integer.parseInt(request.getParameter("max_players")),
+        Server.getInstance().createLobby((int) session.getAttribute("id"),request.getParameter("language"),
+                parseInt(request.getParameter("drawing_time")),
+                parseInt(request.getParameter("rounds")),
+                parseInt(request.getParameter("max_players")),
                 Boolean.parseBoolean(request.getParameter("public")),
                 getListFromString(request.getParameter("custom_words")),
-                Integer.parseInt(request.getParameter("custom_words_chance"))
+                parseInt(request.getParameter("custom_words_chance"))
                 );
+
+        session.setAttribute("partyowner",session.getAttribute("pseudo"));
+        session.setAttribute("partyid",session.getAttribute("id"));
+        Server.getInstance().getLobbyFromId((int)session.getAttribute("id")).joueurs.add((Player) session.getAttribute("player"));
 
         request.getRequestDispatcher("jsp/paint.jsp").forward(request, response);
 

@@ -27,4 +27,22 @@ public class Server {
         lobbies.add(t);
     }
 
+    public boolean lobbyExist(int id){
+        for(int i =0; i<lobbies.size(); i++){
+            if(lobbies.get(i).id == id){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Lobby getLobbyFromId(int id){
+        for(int i =0; i<lobbies.size(); i++){
+            if(lobbies.get(i).id == id){
+                return lobbies.get(i);
+            }
+        }
+        //Cette ligne n'est jamais censée être éxecutée, il faut prendre soin d'être sur qu'un tel lobby exist lorsque qu'on apelle cette méthode
+        return lobbies.get(0);
+    }
 }

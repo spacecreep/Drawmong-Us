@@ -41,26 +41,7 @@
 
 
             <div id="create-lobby" class="tab-content">
-                <h3 class="PseudoPlayer" id="PseudoPlayer">Bienvenue ....</h3>
-                <span id="Joueurs" class="Joueurs">
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-                    <div class="votediv">
-                        <h4 style="margin: 5px">PSEUDO DU JOUEUR</h4>
-                        <button style="margin: 5px">Kick</button>
-                    </div>
-
-                </span>
+                <h3 class="PseudoPlayer" id="PseudoPlayer">Bienvenue ${pseudo}</h3>
                 <div class="center-container">
                     <div class="content-container">
                         <button id="create-lobby-button" onclick="ShowLobby()">Créer une partie</button>
@@ -149,7 +130,11 @@
                         <span id="votekicking-detail"></span>
                         <span class="lobby-detail">Limite de joueurs par IP:</span>
                         <span id="max-clients-ip-detail"></span>
-                        <button id="join-button" onclick="onJoin()" disabled>Rejoindre partie</button>
+                        <form action="joinlobby" method="post">
+                            <input name="lobbycode" id="PseudoInput">
+                            <button type="submit">Rejoindre la partie</button>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -161,6 +146,7 @@
     let lobbyTableLoaded = false;
     let lobbyTableBody = document.getElementById("lobby-table-body");
     let selectedLobby;
+
 
     let createLobbyTabButton = document.getElementById("create-lobby-tab-button");
     let joinLobbyTabButton = document.getElementById("join-lobby-tab-button");

@@ -3,6 +3,7 @@ package fr.imt.ales.cepi.demo.lobby;
 import java.util.ArrayList;
 
 public class Lobby {
+    public ArrayList<Player> joueurs = new ArrayList<>();
     public String langue;
     public int id;
     public int t_dessin;

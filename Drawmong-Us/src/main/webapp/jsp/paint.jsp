@@ -25,6 +25,9 @@
 <div id="titreVote" class="Title">
     <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
 </div>
+<div id="players" class="players">
+    Lobby de ${partyowner}: ${partyid}
+</div>
 
 <div>
     <form name="chronoForm">
