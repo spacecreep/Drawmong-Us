@@ -4,6 +4,7 @@ package fr.imt.ales.cepi.demo.lobby;
 import fr.imt.ales.cepi.demo.Server;
 
 import java.io.*;
+import java.util.ArrayList;
 
 import javax.servlet.*;
 
@@ -31,10 +32,22 @@ public class JoinLobby extends HttpServlet{
             return;
         }
         Server.getInstance().getLobbyFromId(parseInt(id)).joueurs.add((Player)session.getAttribute("player"));
-
+        session.setAttribute("listejoueurs",getCHarFromListPlayers(Server.getInstance().getLobbyFromId(parseInt(id)).joueurs));
         request.getRequestDispatcher("jsp/paint.jsp").forward(request, response);
-        System.out.println(Server.getInstance().getLobbyFromId(parseInt(id)).joueurs.size());
-    }}
+    }
+
+    public static String getCHarFromListPlayers(ArrayList<Player> A){
+        String s = "";
+        for(int i = 0; i<A.size()-1; i++){
+            s += A.get(i).pseudo + ", ";
+        }
+        s += A.get(A.size()-1).pseudo;
+        System.out.println(A);
+        System.out.println(s);
+        return s;
+    }
+
+}
 
 
 

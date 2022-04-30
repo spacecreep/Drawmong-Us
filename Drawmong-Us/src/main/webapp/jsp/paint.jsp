@@ -26,7 +26,13 @@
     <h1>Vote pour qui tu penses être le Dess'Imposteur !</h1>
 </div>
 <div id="players" class="players">
-    Lobby de ${partyowner}: ${partyid}
+    <h3>Lobby de ${partyowner}: ${partyid}</h3>
+    <div>
+        <h3>Joueurs dans le lobby : ${listejoueurs}</h3>
+        <form action="refreshlobby" method="post">
+            <button type="submit">Rafraichir</button>
+        </form>
+    </div>
 </div>
 
 <div>

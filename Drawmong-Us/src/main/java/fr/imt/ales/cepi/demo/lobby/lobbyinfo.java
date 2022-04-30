@@ -45,6 +45,7 @@ public class lobbyinfo extends HttpServlet{
         session.setAttribute("partyowner",session.getAttribute("pseudo"));
         session.setAttribute("partyid",session.getAttribute("id"));
         Server.getInstance().getLobbyFromId((int)session.getAttribute("id")).joueurs.add((Player) session.getAttribute("player"));
+        session.setAttribute("listejoueurs", JoinLobby.getCHarFromListPlayers(Server.getInstance().getLobbyFromId((int)(session.getAttribute("id"))).joueurs));
 
         request.getRequestDispatcher("jsp/paint.jsp").forward(request, response);
 

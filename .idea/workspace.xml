@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="version fonctionelle du système pour rejoindre le lobby de qqn avec le code">
+      <change afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/RefreshLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/JoinLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/JoinLobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/lobbyinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/lobbyinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/lobby.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,6 +306,9 @@
       <workItem from="1649429932543" duration="2902000" />
       <workItem from="1649523643394" duration="781000" />
       <workItem from="1649589167184" duration="2322000" />
+      <workItem from="1649920560675" duration="2660000" />
+      <workItem from="1649928436834" duration="869000" />
+      <workItem from="1651330714739" duration="3933000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>
@@ -371,7 +380,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649320668767</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="version fonctionelle du système pour rejoindre le lobby de qqn avec le code">
+      <created>1649600105825</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649600105825</updated>
+    </task>
+    <task id="LOCAL-00012" summary="version fonctionelle du système pour rejoindre le lobby de qqn avec le code">
+      <created>1649600131059</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649600131059</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +422,7 @@
     <MESSAGE value="Nombre de joueurs en temps réel dans paint en mieux" />
     <MESSAGE value="code du serveur ajouté" />
     <MESSAGE value="cission de la page d'accueil en 2 pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="cission de la page d'accueil en 2 pages" />
+    <MESSAGE value="version fonctionelle du système pour rejoindre le lobby de qqn avec le code" />
+    <option name="LAST_COMMIT_MESSAGE" value="version fonctionelle du système pour rejoindre le lobby de qqn avec le code" />
   </component>
 </project>

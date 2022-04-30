@@ -14,9 +14,9 @@
     <title>Drawmong-Us</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/create_game.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/create_game.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -261,7 +261,7 @@
     }
 
 </script>
-<script src="../js/home.js"></script>
+<script src="js/home.js"></script>
 </body>
 
 </html>
