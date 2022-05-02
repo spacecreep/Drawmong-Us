@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="version fonctionelle du système pour rejoindre le lobby de qqn avec le code">
-      <change afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/RefreshLobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="9ee08707-55e4-4c01-80db-d18a7fdd03d8" name="Changes" comment="o">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2022_20_32__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/JoinLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/JoinLobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/lobbyinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/java/fr/imt/ales/cepi/demo/lobby/lobbyinfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/lobby.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/lobby.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/jsp/paint.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/Drawmong-Us/src/main/webapp/js/chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,6 +304,7 @@
       <workItem from="1649920560675" duration="2660000" />
       <workItem from="1649928436834" duration="869000" />
       <workItem from="1651330714739" duration="3933000" />
+      <workItem from="1651520474918" duration="1468000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'un menu de création et de sélection de lobby">
       <created>1645176291817</created>

@@ -27,8 +27,8 @@ class ChatClient {
                     log.innerHTML += message.from + " : " + "Tu es l'imposteur !" + "\n";
                     document.getElementById("afficheMot").innerText = "Tu es l'imposteur !";
                 }
-                else {
-                    document.getElementById("afficheMot").innerText = "Là y a le truc à dessiner";
+                else if (document.getElementById("afficheMot").innerText !== "Tu es l'imposteur !") {
+                    document.getElementById("afficheMot").innerText = message.content;
                 }
                 chronoStart();
             }
@@ -75,14 +75,21 @@ class ChatClient {
     }
 
     start() {
+        let listemot = ["poule","Mickey","Panda","Café","Hot dog","Licorne","arbre","Lampadaire","Monocycle","Sapin de Noel","Pizza","Hand Spinner","Crustacé" ]
         let min = 1;
         let max = parseInt(document.getElementById("nbjoueur").innerText.substring(20));
         let imposter = Math.floor(Math.random() * (max - min) + min);
+        let numeromot = Math.floor(Math.random()*(listemot.length-min)+min);
         let json = JSON.stringify({
             "content": imposter + "",
             "type": "start"
         })
         this.webSocket.send(json);
+        let jsoff = JSON.stringify({
+            "content": listemot[numeromot] + "",
+            "type": "start"
+        })
+        this.webSocket.send(jsoff);
         chronoStart();
     }
 }
